@@ -2,7 +2,7 @@
 # https://squidfunk.github.io/mkdocs-material/creating-your-site/
 # https://squidfunk.github.io/mkdocs-material/reference/
 
-site_name: xLH xemax Learning Hub
+site_name: xLH xemax Learning Hub Konzeptstudie
 site_url: https://www.xlh.xemax.ch
 
 nav:
@@ -12,11 +12,12 @@ nav:
 
   - Beispiele:
     - Einführung SPS: 2000_beispiele/1000_sps.md
-    - Thermoversuch: 2000_beispiele/2000_thermoversuch.md
+    - Portalroboter: 2000_beispiele/2000_portalroboter.md
+    - Thermoversuch: 2000_beispiele/3000_thermoversuch.md
 
   - Installation & IBN:
     - Programminstallation: 3000_installation_ibn/1000_installation.md
-    - Inbetriebnahme: 3000_installation_ibn/2000_inbetriebnahme_xlh.md
+    - Inbetriebnahme xLH_base: 3000_installation_ibn/2000_inbetriebnahme_xlh.md
 
 extra_css:
   - stylesheets/extra.css
