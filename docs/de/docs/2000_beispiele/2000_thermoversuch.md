@@ -1,9 +1,9 @@
 ## Funktionsumfang
-Im Rahmen eines physikalischen Versuchs zur Thematik Wärmelehre besteht die Aufgabe darin, Wasser zu erwärmen und die
+Im Rahmen eines physikalischen Versuches zur Thematik Wärmelehre besteht die Aufgabe darin, Wasser zu erwärmen und die
 Grössen Temperatur, Leistung und Energie durch Datenauswertung in Kontext zu bringen. Die Datenerfassung basiert 
-auf der SPS-Umgebung xLH_base. Die Anbindung der physikalischen Prozessdatenpunkte erfolgt auf der Basis 
-einer IoT Gerätschaft. Die Auswertung der Daten erfolgt im Anschluss an die Versuchsdurchführung mittels Python 
-in interaktiven Notebooks.
+auf der SPS-Umgebung xLH_base. Die Anbindung der physikalischen Prozessdatenpunkte erfolgt auf der via 
+einer IoT Gerätschaft. Die Auswertung der Daten erfolgt im Anschluss an die Versuchsdurchführung in interaktiven Python 
+Notebooks.
 
 ## Demonstration der Versuchsdurchführung
 <iframe src="https://drive.google.com/file/d/1e4xoz59thjB1u62IE32O0w2MTbL3G5_w/preview" width="100%" height="550" allow="autoplay"></iframe>
