@@ -1,0 +1,16 @@
+# python.exe -m pip install -r requirements.txt
+
+# pip==24.1b2
+# setuptools==70.0.0
+# wheel==0.42.0
+# python-dotenv==1.0.0
+
+# mkdocs==1.6.0
+# mkdocs-material==9.5.26
+mkdocs-glightbox==0.4.0
+# pymdown-extensions==10.8.1
+mkdocs-plugin-inline-svg==0.1.0
+mkdocs-jupyter==0.24.7
+mkdocs-exclude-search==0.6.6
+mkdocs-macros-plugin==1.0.5
+
