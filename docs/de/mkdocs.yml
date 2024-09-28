@@ -10,8 +10,8 @@ nav:
     - Didaktisches Konzept: index.md
     - HK - LF - Orientierung: 1000_xlh/1000_hkp_lfe_orientierung.md
 
-  - Beispiele:
-    - Einführung SPS: 2000_beispiele/1000_sps.md
+  - Umsetzungsbeispiele:
+    - SPS Einführung: 2000_beispiele/1000_sps.md
     - Portalroboter: 2000_beispiele/2000_portalroboter.md
     - Thermoversuch: 2000_beispiele/3000_thermoversuch.md
 

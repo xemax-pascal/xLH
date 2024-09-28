@@ -1,16 +1,18 @@
-Im Rahmen eines physikalischen Versuches zur Thematik Wärmelehre besteht die Aufgabe darin, Wasser zu erwärmen und die
-Grössen Temperatur, Leistung und Energie durch Datenauswertung in Kontext zu bringen. Die Datenerfassung basiert 
-auf der SPS-Umgebung xLH_base. Die Anbindung der physikalischen Prozessdatenpunkte erfolgt auf der via 
-einer IoT Gerätschaft. Die Auswertung der Daten erfolgt im Anschluss an die Versuchsdurchführung in interaktiven Python 
-Notebooks.
+Die aufgezeigte Umsetzung "Thermoversuch" entstand als Konzeptstudie um Möglichkeiten und Ansätze zu
+evaluieren hinsichtlich der Zeit- und Ortsunabhängigen Gestaltung von Versuchen auf der Basis digitalisierter 
+Systeme. Der Fokus liegt in der Nutzung der digitalen Versuchsinfrastruktur. Es wird kein Anspruch auf  
+Vollständigkeit gesetzt. Auf die theoretische Erarbeitung der physikalischen Grundlagen wird in dieser Konzeptstudie
+nur am Rande eingegangen.
+
 
 ## Daten zum Download
-<iframe src="https://drive.google.com/embeddedfolderview?id=1KvIM39sJrk3C-896En0GTyCzj8-iVHNA#list" style="width:100%; height:320px; border:0;"></iframe>
+
+<iframe src="https://drive.google.com/embeddedfolderview?id=1KvIM39sJrk3C-896En0GTyCzj8-iVHNA#list" style="width:100%; height:280px; border:0;"></iframe>
 <!-- <iframe src="https://drive.google.com/embeddedfolderview?id=1KvIM39sJrk3C-896En0GTyCzj8-iVHNA#grid" style="width:100%; height:600px; border:0;"></iframe> -->
 
-## Übersicht Videodokumentation
 
-- 1_Thermoversuch.mp4
+## Übersicht Videodokumentation
+- 1_Thermoversuch_Versuchsdurchfuehrung.mp4
     - Demonstration der Versuchsmessung
     - Der Fokus liegt in der Durchführung
     - Die vorgelagerte Theorie sowie die Begründung der Berechnungen ist nicht enthalten 
@@ -29,8 +31,8 @@ Notebooks.
 
 <iframe src="https://drive.google.com/embeddedfolderview?id=1Q6JZqPgkvbGE1AfSb3AFKegfI4JqTXGt#list" style="width:100%; height:275px; border:0;"></iframe>
 
-## Demonstration der Versuchsdurchführung
 
+## Demonstration der Versuchsdurchführung
 - Demonstration der Versuchsmessung
 - Der Fokus liegt in der Durchführung
 - Die vorgelagerte Theorie sowie die Begründung der Berechnungen ist nicht enthalten 
