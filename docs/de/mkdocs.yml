@@ -18,6 +18,7 @@ nav:
   - Installation & IBN:
     - Programminstallation: 3000_installation_ibn/1000_installation.md
     - Inbetriebnahme xLH_base: 3000_installation_ibn/2000_inbetriebnahme_xlh.md
+    - Divers: 3000_installation_ibn/3000_divers.md
 
 extra_css:
   - stylesheets/extra.css
