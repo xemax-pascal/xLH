@@ -8,7 +8,7 @@ site_url: https://www.xlh.xemax.ch
 nav:
   - xLH:
     - Didaktisches Konzept: index.md
-    - HK - LF - Orientierung: 1000_xlh/1000_hkp_lfe_orientierung.md
+    - HK - LFE - Orientierung: 1000_xlh/1000_hkp_lfe_orientierung.md
 
   - Umsetzungsbeispiele:
     - SPS Einführung: 2000_beispiele/1000_sps.md

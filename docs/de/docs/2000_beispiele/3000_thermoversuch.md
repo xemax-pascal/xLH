@@ -1,14 +1,12 @@
-Die aufgezeigte Umsetzung "Thermoversuch" entstand als Konzeptstudie um Möglichkeiten und Ansätze zu
-evaluieren hinsichtlich der Zeit- und Ortsunabhängigen Gestaltung von Versuchen auf der Basis digitalisierter 
-Systeme. Der Fokus liegt in der Nutzung der digitalen Versuchsinfrastruktur. Es wird kein Anspruch auf  
-Vollständigkeit gesetzt. Auf die theoretische Erarbeitung der physikalischen Grundlagen wird in dieser Konzeptstudie
-nur am Rande eingegangen.
-
+Die aufgezeigte Umsetzung "Thermoversuch" entstand als Konzeptstudie, um Möglichkeiten und Ansätze zur zeit- und 
+ortsunabhängigen Durchführung von Versuchen auf Basis digitalisierter Systeme zu evaluieren. Der Fokus liegt auf 
+der Nutzung der digitalen Versuchsinfrastruktur. Es wird kein Anspruch auf Vollständigkeit erhoben. Die theoretische 
+Erarbeitung der physikalischen Grundlagen wird in dieser Konzeptstudie nur am Rande behandelt.
 
 ## Daten zum Download
 
 <iframe src="https://drive.google.com/embeddedfolderview?id=1KvIM39sJrk3C-896En0GTyCzj8-iVHNA#list" style="width:100%; height:280px; border:0;"></iframe>
-<!-- <iframe src="https://drive.google.com/embeddedfolderview?id=1KvIM39sJrk3C-896En0GTyCzj8-iVHNA#grid" style="width:100%; height:600px; border:0;"></iframe> -->
+<!-- <iframe src="https://drive.google.com/embeddedfolderview?id=1KvIM39sJrk3C-896En0GTyCzj8-iVHNA#grid" style="width:100%; height:620px; border:0;"></iframe> -->
 
 
 ## Übersicht Videodokumentation
