@@ -36,3 +36,6 @@ Erarbeitung der physikalischen Grundlagen wird in dieser Konzeptstudie nur am Ra
 - Die vorgelagerte Theorie sowie die Begründung der Berechnungen ist nicht enthalten 
 
 <iframe src="https://drive.google.com/file/d/1e4xoz59thjB1u62IE32O0w2MTbL3G5_w/preview" width="100%" height="550" allow="autoplay"></iframe>
+<a href="https://drive.google.com/file/d/1e4xoz59thjB1u62IE32O0w2MTbL3G5_w/preview" target="_blank">
+    Full Screen
+</a> 
