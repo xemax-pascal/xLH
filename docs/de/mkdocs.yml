@@ -8,7 +8,7 @@ site_url: https://www.xlh.xemax.ch
 nav:
   - xLH:
     - Didaktisches Konzept: index.md
-    - HK - LF - Orientierung: 1000_xlh/1000_hkp_lfe_orientierung.md
+    - HK - LFE - Orientierung: 1000_xlh/1000_hkp_lfe_orientierung.md
 
   - Umsetzungsbeispiele:
     - SPS Einführung: 2000_beispiele/1000_sps.md
@@ -139,7 +139,7 @@ extra:
   homepage: https://xemax.ch
   analytics:
       provider: google
-      property: G-5LVJ0HCXXY
+      property: G-JD2BQNHPCQ
   consent:
     title: Cookie-Richtlinien
     description: Wir verwenden Cookies, um Ihre wiederholten Besuche und Präferenzen zu erkennen, sowie um die Effektivität unserer Dokumentation zu messen und um festzustellen, ob die Nutzer finden, wonach sie suchen. Mit Ihrer Zustimmung helfen Sie uns, unsere Dokumentation zu verbessern.
