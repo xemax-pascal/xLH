@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- A small example. May be used as a template for own development. Nothing special. -->
+<ISO15745Profile xmlns="http://www.profibus.com/GSDML/2003/11/DeviceProfile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.profibus.com/GSDML/2003/11/DeviceProfile ..\xsd\GSDML-DeviceProfile-V2.42.xsd">
+	<!-- ProfileHeader definition as defined in ISO 15745-1. Please do not change the content. -->
+	<ProfileHeader>
+		<ProfileIdentification>PROFINET Device Profile</ProfileIdentification>
+		<ProfileRevision>1.00</ProfileRevision>
+		<ProfileName>Device Profile for PROFINET Devices</ProfileName>
+		<ProfileSource>PROFIBUS Nutzerorganisation e. V. (PNO)</ProfileSource>
+		<ProfileClassID>Device</ProfileClassID>
+		<ISO15745Reference>
+			<ISO15745Part>4</ISO15745Part>
+			<ISO15745Edition>1</ISO15745Edition>
+			<ProfileTechnology>GSDML</ProfileTechnology>
+		</ISO15745Reference>
+	</ProfileHeader>
+	<ProfileBody>
+		<DeviceIdentity VendorID="0x02CC" DeviceID="0x1017">
+			<InfoText TextId="IDT_INFO_Device"/>
+			<VendorName Value="CODESYS"/>
+		</DeviceIdentity>
+		<DeviceFunction>
+			<Family MainFamily="I/O" ProductFamily="CODESYS PLC"/>
+		</DeviceFunction>
+		<ApplicationProcess>
+			<DeviceAccessPointList>
+				<DeviceAccessPointItem ID="IDD_1" PNIO_Version="V2.42" PhysicalSlots="0..64" ModuleIdentNumber="0x00000001" MinDeviceInterval="32" DNS_CompatibleName="PN-Device" FixedInSlots="0" ObjectUUID_LocalIndex="1" MultipleWriteSupported="true" RequiredSchemaVersion="V2.1" DeviceAccessSupported="false" CheckDeviceID_Allowed="true" NameOfStationNotTransferable="false" LLDP_NoD_Supported="true" ResetToFactoryModes="2 4">
+					<ModuleInfo>
+						<Name TextId="IDT_NAME_DAP1"/>
+						<InfoText TextId="IDT_INFO_DAP1"/>
+						<VendorName Value="CODESYS"/>
+						<OrderNumber Value="-"/>
+						<HardwareRelease Value="0"/>
+						<SoftwareRelease Value="V4.5.0"/>						
+					</ModuleInfo>
+					<CertificationInfo ConformanceClass="B" ApplicationClass="" NetloadClass="I"/>
+					<!--SubslotList>
+						<SubslotItem SubslotNumber="1" TextId="IDT_SUBSLOT_1"/>
+						<SubslotItem SubslotNumber="32768" TextId="IDT_SUBSLOT_Interface"/>
+						<SubslotItem SubslotNumber="32769" TextId="IDT_SUBSLOT_Port1"/>
+						<SubslotItem SubslotNumber="32770" TextId="IDT_SUBSLOT_Port2"/>
+					</SubslotList-->
+					<IOConfigData MaxInputLength="1440" MaxOutputLength="1440" MaxDataLength="2880"/>
+					<UseableModules>
+						<ModuleItemRef ModuleItemTarget="IDM_1" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_2" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_3" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_64x3" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_11" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_12_DataRecord" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_12" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_13" AllowedInSlots="1..64"/>	
+						<ModuleItemRef ModuleItemTarget="IDM_8x11" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_8x12" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_8x13" AllowedInSlots="1..64"/>	
+						<ModuleItemRef ModuleItemTarget="IDM_21" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_22" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_23" AllowedInSlots="1..64"/>	
+						<ModuleItemRef ModuleItemTarget="IDM_8x21" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_8x22" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_8x23" AllowedInSlots="1..64"/>	
+						<ModuleItemRef ModuleItemTarget="IDM_83" AllowedInSlots="1..64"/>
+						<ModuleItemRef ModuleItemTarget="IDM_Subslots4" AllowedInSlots="1..64"/>						
+					</UseableModules>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_V1" SubmoduleIdentNumber="0x00000001" MayIssueProcessAlarm="false" Writeable_IM_Records="1 2 3">
+							<IOData/>
+							<!--
+							<RecordDataList>
+								<ParameterRecordDataItem Index="1" Length="2">
+									<Name TextId="IDT_RECORD_NAME_Head"/>
+									<Const Data="0x04"/>
+									<Ref DataType="Unsigned8" ByteOffset="1" DefaultValue="0" AllowedValues="0..99" Changeable="true" Visible="true" TextId="IDT_REF_Power"/>
+								</ParameterRecordDataItem>
+							</RecordDataList>
+							-->
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_VS1"/>
+								<InfoText TextId="IDT_INFO_VS1"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+					<SystemDefinedSubmoduleList>
+						<InterfaceSubmoduleItem ID="IDS_I" SubmoduleIdentNumber="0x00001000" SubslotNumber="32768" TextId="IDT_NAME_IS" SupportedRT_Classes="RT_CLASS_1" SupportedProtocols="LLDP;SNMP" PTP_BoundarySupported="true" DCP_BoundarySupported="true"> <!-- SupportedMibs="MIB2" -->
+						   <ApplicationRelations StartupMode="Advanced;Legacy" >
+								<TimingProperties SendClock="32" ReductionRatio="1 2 4 8 16 32 64 128 256 512"/>
+							</ApplicationRelations>
+						</InterfaceSubmoduleItem>
+						<PortSubmoduleItem ID="IDS_P1" SubmoduleIdentNumber="0x00001001" SubslotNumber="32769" TextId="IDT_NAME_PS1" MaxPortRxDelay="350" MaxPortTxDelay="160">
+							<MAUTypeList>
+								<MAUTypeItem Value="16"/>
+							</MAUTypeList>						
+						</PortSubmoduleItem>
+					</SystemDefinedSubmoduleList>
+				</DeviceAccessPointItem>
+			</DeviceAccessPointList>
+
+			<ModuleList>
+				<!-- 8 Bit Modules--> 
+				<ModuleItem ID="IDM_1" ModuleIdentNumber="0x00001001">
+					<ModuleInfo CategoryRef="IDC_DI">
+						<Name TextId="IDT_NAME_M1"/>
+						<InfoText TextId="IDT_INFO_MIn"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_1" SubmoduleIdentNumber="0x00001001" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Unsigned8" UseAsBits="true" TextId="IDT_Input"/>
+								</Input>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				
+				<ModuleItem ID="IDM_2" ModuleIdentNumber="0x00001002">
+					<ModuleInfo CategoryRef="IDC_DO">
+						<Name TextId="IDT_NAME_M2"/>
+						<InfoText TextId="IDT_INFO_MOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_2" SubmoduleIdentNumber="0x00001002" MayIssueProcessAlarm="false">
+							<IOData>
+								<Output>
+									<DataItem DataType="Unsigned8" UseAsBits="true" TextId="IDT_Output"/>
+								</Output>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				
+				<ModuleItem ID="IDM_3" ModuleIdentNumber="0x00001003">
+					<ModuleInfo CategoryRef="IDC_DIO">
+						<Name TextId="IDT_NAME_M3"/>
+						<InfoText TextId="IDT_INFO_MInOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_3" SubmoduleIdentNumber="0x00001003" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Unsigned8" UseAsBits="true" TextId="IDT_Input"/>
+								</Input>
+								<Output>
+									<DataItem DataType="Unsigned8" UseAsBits="true" TextId="IDT_Output"/>
+								</Output>								
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+
+				<ModuleItem ID="IDM_64x3" ModuleIdentNumber="0x00001006">
+					<ModuleInfo CategoryRef="IDC_DIO">
+						<Name TextId="IDT_NAME_M64x3"/>
+						<InfoText TextId="IDT_INFO_MInOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_64x3" SubmoduleIdentNumber="0x00001006" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="OctetString" Length="64" TextId="IDT_Input"/>
+								</Input>
+								<Output>
+									<DataItem DataType="OctetString" Length="64" TextId="IDT_Output"/>
+								</Output>								
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>				
+
+				<!-- Unsigned32 Modules--> 
+				<ModuleItem ID="IDM_11" ModuleIdentNumber="0x00001011">
+					<ModuleInfo CategoryRef="IDC_DI">
+						<Name TextId="IDT_NAME_M11"/>
+						<InfoText TextId="IDT_INFO_MIn"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_11" SubmoduleIdentNumber="0x00001011" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+								</Input>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+								
+				<ModuleItem ID="IDM_12" ModuleIdentNumber="0x00001012">
+					<ModuleInfo CategoryRef="IDC_DO">
+						<Name TextId="IDT_NAME_M12"/>
+						<InfoText TextId="IDT_INFO_MOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_12" SubmoduleIdentNumber="0x00001012" MayIssueProcessAlarm="false">
+							<IOData>
+								<Output>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+								</Output>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				
+				<!--example with record-data-->
+				<ModuleItem ID="IDM_12_DataRecord" ModuleIdentNumber="0x00011012">
+					<ModuleInfo CategoryRef="IDC_FEATURES">
+						<Name TextId="IDT_NAME_M12_DataRecord"/>
+						<InfoText TextId="IDT_INFO_MRecordData"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_12_DataRecord" SubmoduleIdentNumber="0x00011012" MayIssueProcessAlarm="false">
+							<IOData>
+								<Output>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+								</Output>
+							</IOData>
+							<RecordDataList>
+								<ParameterRecordDataItem Index="10" Length="6">
+									<Name TextId="IDT_RECORD_NAME_General Parameter"/>
+									<Const Data="0x00,0x00,0x00,0x00,0x00,0x00"/>
+									<Ref ValueItemTarget="IDV_UserDefinedSubstitute" ByteOffset="0" DataType="Bit" BitOffset="0" DefaultValue="1" TextId="IDT_REF_UserDefinedSubstitute"/>
+									<Ref ByteOffset="2" DataType="Unsigned32" DefaultValue="1000" AllowedValues="0..100000" TextId="IDT_REF_SubstituteValue"/>
+								</ParameterRecordDataItem>
+								<ParameterRecordDataItem Index="11" Length="4">
+									<Name TextId="IDT_RECORD_NAME_OtherParameter"/>
+									<Const Data="0x00,0x00,0x00,0x00"/>
+									<Ref ByteOffset="0" DataType="Unsigned32" DefaultValue="123456789" TextId="IDT_REF_OtherValue"/>
+								</ParameterRecordDataItem>								
+							</RecordDataList>							
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				
+				<ModuleItem ID="IDM_13" ModuleIdentNumber="0x00001013">
+					<ModuleInfo CategoryRef="IDC_DIO">
+						<Name TextId="IDT_NAME_M13"/>
+						<InfoText TextId="IDT_INFO_MInOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_13" SubmoduleIdentNumber="0x00001013" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+								</Input>
+								<Output>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+								</Output>								
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+
+
+				<ModuleItem ID="IDM_8x11" ModuleIdentNumber="0x00001811">
+					<ModuleInfo CategoryRef="IDC_DI">
+						<Name TextId="IDT_NAME_M8x11"/>
+						<InfoText TextId="IDT_INFO_MIn"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_8x11" SubmoduleIdentNumber="0x00001811" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>									
+								</Input>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				
+				<ModuleItem ID="IDM_8x12" ModuleIdentNumber="0x00001812">
+					<ModuleInfo CategoryRef="IDC_DO">
+						<Name TextId="IDT_NAME_M8x12"/>
+						<InfoText TextId="IDT_INFO_MOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_8x12" SubmoduleIdentNumber="0x00001812" MayIssueProcessAlarm="false">
+							<IOData>
+								<Output>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>									
+								</Output>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				
+				<ModuleItem ID="IDM_8x13" ModuleIdentNumber="0x00001813">
+					<ModuleInfo CategoryRef="IDC_DIO">
+						<Name TextId="IDT_NAME_M8x13"/>
+						<InfoText TextId="IDT_INFO_MInOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_8x13" SubmoduleIdentNumber="0x00001813" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Input"/>	
+								</Input>
+								<Output>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned32" TextId="IDT_Output"/>	
+								</Output>								
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+
+
+				<!-- Float32 Modules--> 
+				<ModuleItem ID="IDM_21" ModuleIdentNumber="0x00001021">
+					<ModuleInfo CategoryRef="IDC_DI">
+						<Name TextId="IDT_NAME_M21"/>
+						<InfoText TextId="IDT_INFO_MIn"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_21" SubmoduleIdentNumber="0x00001021" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+								</Input>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				
+				<ModuleItem ID="IDM_22" ModuleIdentNumber="0x00001022">
+					<ModuleInfo CategoryRef="IDC_DO">
+						<Name TextId="IDT_NAME_M22"/>
+						<InfoText TextId="IDT_INFO_MOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_22" SubmoduleIdentNumber="0x00001022" MayIssueProcessAlarm="false">
+							<IOData>
+								<Output>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+								</Output>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				
+				<ModuleItem ID="IDM_23" ModuleIdentNumber="0x00001023">
+					<ModuleInfo CategoryRef="IDC_DIO">
+						<Name TextId="IDT_NAME_M23"/>
+						<InfoText TextId="IDT_INFO_MInOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_23" SubmoduleIdentNumber="0x00001023" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+								</Input>
+								<Output>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+								</Output>								
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+
+
+				<ModuleItem ID="IDM_8x21" ModuleIdentNumber="0x00002811">
+					<ModuleInfo CategoryRef="IDC_DI">
+						<Name TextId="IDT_NAME_M8x21"/>
+						<InfoText TextId="IDT_INFO_MIn"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_8x21" SubmoduleIdentNumber="0x00002811" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>									
+								</Input>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				
+				<ModuleItem ID="IDM_8x22" ModuleIdentNumber="0x00001822">
+					<ModuleInfo CategoryRef="IDC_DO">
+						<Name TextId="IDT_NAME_M8x22"/>
+						<InfoText TextId="IDT_INFO_MOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_8x22" SubmoduleIdentNumber="0x00001822" MayIssueProcessAlarm="false">
+							<IOData>
+								<Output>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>									
+								</Output>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				
+				<ModuleItem ID="IDM_8x23" ModuleIdentNumber="0x00001823">
+					<ModuleInfo CategoryRef="IDC_DIO">
+						<Name TextId="IDT_NAME_M8x23"/>
+						<InfoText TextId="IDT_INFO_MInOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_8x23" SubmoduleIdentNumber="0x00001823" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>
+									<DataItem DataType="Float32" TextId="IDT_Input"/>	
+								</Input>
+								<Output>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>
+									<DataItem DataType="Float32" TextId="IDT_Output"/>	
+								</Output>								
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+
+				<!-- Mixed Data-type Modules--> 
+				<ModuleItem ID="IDM_83" ModuleIdentNumber="0x00001083">
+					<ModuleInfo CategoryRef="IDC_DIO">
+						<Name TextId="IDT_NAME_M83"/>
+						<InfoText TextId="IDT_INFO_MInOut"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_83" SubmoduleIdentNumber="0x00001083" MayIssueProcessAlarm="false">
+							<IOData>
+								<Input>
+									<DataItem DataType="Unsigned8" UseAsBits="true" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned8" UseAsBits="true" TextId="IDT_Input"/>
+									<DataItem DataType="Unsigned16" TextId="IDT_Input"/>								
+									<DataItem DataType="Unsigned32"  TextId="IDT_Input"/>									
+									<DataItem DataType="Integer64"  TextId="IDT_Input"/>
+								</Input>
+								<Output>
+									<DataItem DataType="Unsigned8" UseAsBits="true" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned8" UseAsBits="true" TextId="IDT_Output"/>
+									<DataItem DataType="Unsigned16" TextId="IDT_Output"/>								
+									<DataItem DataType="Unsigned32"  TextId="IDT_Output"/>									
+									<DataItem DataType="Integer64"  TextId="IDT_Output"/>
+								</Output>								
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_S"/>
+								<InfoText TextId="IDT_INFO_S"/>
+								<OrderNumber Value="-"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+
+				<ModuleItem ID="IDM_Subslots4" ModuleIdentNumber="0x00020000" PhysicalSubslots="1..4">
+					<ModuleInfo CategoryRef="IDC_FEATURES">
+						<Name TextId="IDT_NAME_Subslots4"/>
+						<InfoText TextId="IDT_INFO_Subslots4"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+					<SubslotList>
+						<SubslotItem SubslotNumber="1" TextId="IDT_SS_1"/>
+						<SubslotItem SubslotNumber="2" TextId="IDT_SS_2"/>
+						<SubslotItem SubslotNumber="3" TextId="IDT_SS_3"/>
+						<SubslotItem SubslotNumber="4" TextId="IDT_SS_4"/>
+					</SubslotList>					
+					<UseableSubmodules>
+						<SubmoduleItemRef SubmoduleItemTarget="IDS_Input_4UInt" AllowedInSubslots="1..4"/>
+						<SubmoduleItemRef SubmoduleItemTarget="IDS_Output_4UInt" AllowedInSubslots="1..4" />					
+					</UseableSubmodules>
+				</ModuleItem>				
+			</ModuleList>
+			
+			<SubmoduleList>
+				<SubmoduleItem ID="IDS_Input_4UInt" SubmoduleIdentNumber="0x00020001" MayIssueProcessAlarm="false">
+					<IOData>
+						<Input>
+							<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+							<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+							<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+							<DataItem DataType="Unsigned32" TextId="IDT_Input"/>
+						</Input>								
+					</IOData>
+					<ModuleInfo>
+						<Name TextId="IDTS_NAME_In4xU32"/>
+						<InfoText TextId="IDTS_NAME_In4xU32"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+				</SubmoduleItem>
+
+				<SubmoduleItem ID="IDS_Output_4UInt" SubmoduleIdentNumber="0x00020002" MayIssueProcessAlarm="false">
+					<IOData>
+						<Output>
+							<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+							<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+							<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+							<DataItem DataType="Unsigned32" TextId="IDT_Output"/>
+						</Output>								
+					</IOData>
+					<ModuleInfo>
+						<Name TextId="IDTS_NAME_Out4xU32"/>
+						<InfoText TextId="IDTS_NAME_Out4xU32"/>
+						<OrderNumber Value="-"/>
+					</ModuleInfo>
+				</SubmoduleItem>				
+			</SubmoduleList>
+			
+			<ValueList>
+				<ValueItem ID="IDV_UserDefinedSubstitute">
+					<Assignments>
+						<Assign Content="0" TextId="IDT_ASSIGN_Disable"/>
+						<Assign Content="1" TextId="IDT_ASSIGN_Enable"/>
+					</Assignments>
+				</ValueItem>
+			</ValueList>
+			
+			<ChannelDiagList>
+				<!-- vendor specific Channel ErrorType=0x1000, nothing new here -->
+				<ChannelDiagItem ErrorType="4096">
+					<Name TextId="DIAG.Runtime-Cfg"/>
+					<ExtChannelDiagList>
+						<ExtChannelDiagItem ErrorType="1">
+							<Name TextId="DIAG.IP-Change not allowed"/>
+							<Help TextId="DIAG.IP-Change not allowed.Help" />
+						</ExtChannelDiagItem>
+						<ExtChannelDiagItem ErrorType="2">
+							<Name TextId="DIAG.DynamicIP"/>
+							<Help TextId="DIAG.DynamicIP.Help" />
+						</ExtChannelDiagItem>					
+					</ExtChannelDiagList>
+				</ChannelDiagItem>
+			</ChannelDiagList>
+			
+			<CategoryList>
+				<CategoryItem ID="IDC_DI" TextId="IDT_CATEGORY_DI">
+					<InfoText TextId="IDT_INFO_DI"/>
+				</CategoryItem>
+				<CategoryItem ID="IDC_DO" TextId="IDT_CATEGORY_DO">
+					<InfoText TextId="IDT_INFO_DO"/>
+				</CategoryItem>
+				<CategoryItem ID="IDC_DIO" TextId="IDT_CATEGORY_DIO">
+					<InfoText TextId="IDT_INFO_DIO"/>
+				</CategoryItem>
+				<CategoryItem ID="IDC_FEATURES" TextId="IDT_CATEGORY_FEATURES">
+					<InfoText TextId="IDT_INFO_FEATURES"/>
+				</CategoryItem>					
+			</CategoryList>
+			<ExternalTextList>
+				<PrimaryLanguage>
+					<Text TextId="IDT_INFO_Device" Value="CODESYS PROFINET Device"/>
+					<Text TextId="IDT_NAME_DAP1" Value="CODESYS PROFINET Device"/>
+					<Text TextId="IDT_INFO_DAP1" Value="CODESYS PLC running as PROFINET Device."/>		<!-- Description of device --> 
+					<Text TextId="IDT_SUBSLOT_1" Value="Subslot 1"/>
+					<Text TextId="IDT_SUBSLOT_Interface" Value="Interface"/>
+					<Text TextId="IDT_SUBSLOT_Port1" Value="Port 1"/>
+					<Text TextId="IDT_SUBSLOT_Port2" Value="Port 2"/>
+					<Text TextId="IDT_RECORD_NAME_Head" Value="Parameters of head module"/>
+					<Text TextId="IDT_REF_Power" Value="Percent power"/>
+					<Text TextId="IDT_NAME_VS1" Value="Submodule V1"/>
+					<Text TextId="IDT_INFO_VS1" Value="Description of submodule V1"/>
+					<Text TextId="IDT_NAME_IS" Value="I"/>
+					<Text TextId="IDT_NAME_PS1" Value="P1"/>
+					<Text TextId="IDT_NAME_PS2" Value="P2"/>
+					
+					<!-- Module Names -->
+					<Text TextId="IDT_NAME_M1" Value="Input 8Bit"/>
+					<Text TextId="IDT_NAME_M2" Value="Output 8Bit"/>
+					<Text TextId="IDT_NAME_M3" Value="InOut 8Bit"/>
+					
+					<Text TextId="IDT_NAME_M11" Value="Input Unsigned32"/>
+					<Text TextId="IDT_NAME_M12" Value="Output Unsigned32"/>
+					<Text TextId="IDT_NAME_M12_DataRecord" Value="Output Unsigned32 DataRecord"/>					
+					<Text TextId="IDT_NAME_M13" Value="InOut Unsigned32"/>
+					
+					<Text TextId="IDT_NAME_M8x11" Value="Input Unsigned32*8"/>
+					<Text TextId="IDT_NAME_M8x12" Value="Output Unsigned32*8"/>
+					<Text TextId="IDT_NAME_M8x13" Value="InOut Unsigned32*8"/>
+
+					<Text TextId="IDT_NAME_M21" Value="Input Float32"/>
+					<Text TextId="IDT_NAME_M22" Value="Output Float32"/>
+					<Text TextId="IDT_NAME_M23" Value="InOut Float32"/>
+					
+					<Text TextId="IDT_NAME_M8x21" Value="Input Float32*8"/>
+					<Text TextId="IDT_NAME_M8x22" Value="Output Float32*8"/>
+					<Text TextId="IDT_NAME_M8x23" Value="InOut Float32*8"/>
+
+					<Text TextId="IDT_NAME_M83" Value="InOut Structured"/>				
+					<Text TextId="IDT_NAME_M64x3" Value="InOut 64 Byte"/>	
+					
+					<Text TextId="IDT_Input" Value="Input Data"/>
+					<Text TextId="IDT_Output" Value="Output Data"/>
+					<Text TextId="IDT_INFO_MIn" Value="Module provides Controller Input-Data"/>
+					<Text TextId="IDT_INFO_MOut" Value="Module consumes Controller Output-Data"/>
+					<Text TextId="IDT_INFO_MInOut" Value="Module with Input- and Output-Data"/>					
+
+					<Text TextId="IDT_NAME_S" Value="Submodule"/>
+					<Text TextId="IDT_INFO_S" Value="Description of submodule"/>
+					
+					<Text TextId="IDT_CATEGORY_DI" Value="Input"/>
+					<Text TextId="IDT_INFO_DI" Value="Description of input"/>
+					<Text TextId="IDT_CATEGORY_DO" Value="Output"/>
+					<Text TextId="IDT_INFO_DO" Value="Description of output"/>
+					<Text TextId="IDT_CATEGORY_DIO" Value="Input/Output"/>
+					<Text TextId="IDT_INFO_DIO" Value="Description of input/output"/>
+					<Text TextId="IDT_CATEGORY_FEATURES" Value="Features"/>
+					<Text TextId="IDT_INFO_FEATURES" Value="Some examples for specific features"/>
+					
+					<Text TextId="Inputs" Value="Inputs"/>
+					<Text TextId="Outputs" Value="Outputs"/>
+					
+					<!--Record Data -->
+					<Text TextId="IDT_REF_SubstituteValue" Value="Substitute value"/>
+					<Text TextId="IDT_RECORD_NAME_General Parameter" Value="General parameter"/>
+					<Text TextId="IDT_RECORD_NAME_OtherParameter" Value="Other parameter"/>
+					<Text TextId="IDT_REF_UserDefinedSubstitute" Value="Custom substitute value"/>
+					<Text TextId="IDT_REF_OtherValue" Value="Other value"/>
+					<Text TextId="IDT_ASSIGN_Disable" Value="Disable"/>
+					<Text TextId="IDT_ASSIGN_Enable" Value="Enable"/>
+					<Text TextId="IDT_INFO_MRecordData" Value="Module with Parameters.&#10;Some Record-Data (Parameters) are transfered if the controller establishes a connection.&#10;In the devices's application, this data can be received with the CommFB.RCVREC function block."/>					
+
+					<!-- Submodules -->
+					<Text TextId="IDT_NAME_Subslots4" Value="Module with Subslots"/>
+					<Text TextId="IDT_INFO_Subslots4" Value="Module with pluggable Submodules"/>
+
+					<Text TextId="IDTS_NAME_In4xU32" Value="Input Unsigned32*4"/>
+					<Text TextId="IDTS_NAME_Out4xU32" Value="Output Unsigned32*4"/>
+					
+					<Text TextId="IDT_SS_1" Value="Slot 1"/>
+					<Text TextId="IDT_SS_2" Value="Slot 2"/>
+					<Text TextId="IDT_SS_3" Value="Slot 3"/>
+					<Text TextId="IDT_SS_4" Value="Slot 4"/>
+					
+					
+					<!-- Diagnosis -->
+					<Text TextId="DIAG.Runtime-Cfg" Value="Runtime Configuration:"/>
+					<Text TextId="DIAG.IP-Change not allowed" Value="IP-Change not enabled on specified interface ! PN-Device will operate with limitations."/>
+					<Text TextId="DIAG.IP-Change not allowed.Help" Value="Enable update of IP-address in *.cfg - File"/>
+					<Text TextId="DIAG.DynamicIP" Value="IP-Change not possible on specified interface ! PN-Device will operate with limitations."/>
+					<Text TextId="DIAG.DynamicIP.Help" Value="Dynamic IP address, provided by DHCP, BOOTP, etc. cannot be changed by SysSockSet !"/>
+					
+				</PrimaryLanguage>
+			</ExternalTextList>
+		</ApplicationProcess>
+	</ProfileBody>
+</ISO15745Profile>
