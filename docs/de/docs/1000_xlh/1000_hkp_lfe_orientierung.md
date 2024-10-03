@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Handlungskompetenzen - Lernfeldorientierung
 
 Die angestrebte Produktpalette xLH bietet weitreichende Möglichkeiten, um Lernfelder und Handlungskompetenzen im 

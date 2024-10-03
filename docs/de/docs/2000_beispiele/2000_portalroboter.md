@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 Die Robotik ist ein wesentlicher Bestandteil der industriellen Fertigung und Produktion. Die Integration von Robotik 
 in den Unterricht stellt grosse Herausforderungen an Lehrkräfte und Infrastruktur. Neben den finanziellen Belastungen 
 der Bildungseinrichtungen müssen häufig proprietäre Robotiksysteme gewartet werden. Der hier vorgestellte Ansatz zeigt, 

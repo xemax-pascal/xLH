@@ -1,4 +1,7 @@
-## Erste Schritte
+---
+comments: true
+---
+
 Dieses Kapitel beschreibt Schritt-für-Schritt wie die Installation und abschliessende Inbetriebnahme durchgeführt werden sollen.
 
 ### 1. Programm-Installationen auf dem Windows-Rechner
@@ -7,6 +10,7 @@ Die Zusammenstellung der benötigten Programm-Installationsdateien sind unter de
    Download Windows-Programme
 </a>
 abgelegt.
+
 1. Installation <i>SPS Entwicklungsumgebung (Codesys)</i>, gemäss Video aus dem Kapitel 
 <a href="https://www.xlh.xemax.ch/3000_installation_ibn/1000_installation/#sps-entwicklungsumgebung" target="_blank">
    SPS Entwicklungsumgebung
@@ -39,6 +43,7 @@ verwendet wird.
 
 #### 1. Image auf SD-Karte laden
 Die Vorgehensweise für das Laden eines Image auf die SD-Karte unterteilt sich in die folgenden Schritte:
+
 1. SD-Karte formatieren, gemäss Video aus dem Kapitel 
 <a href="https://www.xlh.xemax.ch/3000_installation_ibn/2000_inbetriebnahme_xlh/" target="_blank">
    xLH_base Installation Linux-Betriebssystem.
@@ -54,7 +59,8 @@ In diesem Schritt werden die drei verschiedenen Arten der Konnektierung des xLH_
 <a href="https://www.xlh.xemax.ch/3000_installation_ibn/2000_inbetriebnahme_xlh/" target="_blank">
    xLH_base Konfiguration Ethernet & WiFi
 </a> dokumentiert.
-Dem xLH_base wird standardmässig die IP 192.168.31.31 zugewiesen. 
+Dem xLH_base wird standardmässig die IP 192.168.31.31 zugewiesen.
+
 1. <b>USB-Kabel</b> (Empfehlung)
 2. WiFi (Einstellungen via PuTTY vornehmen)
 3. Ethernet-Adapter

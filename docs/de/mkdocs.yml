@@ -4,6 +4,7 @@
 
 site_name: xLH xemax Learning Hub Konzeptstudie
 site_url: https://www.xlh.xemax.ch
+repo_url: https://github.com/xemax-pascal/xLH
 
 nav:
   - xLH:
@@ -16,9 +17,11 @@ nav:
     - Thermoversuch: 2000_beispiele/3000_thermoversuch.md
 
   - Installation & IBN:
+    - Erste Schritte: 3000_installation_ibn/0000_erste_schritte.md
     - Programminstallation: 3000_installation_ibn/1000_installation.md
     - Inbetriebnahme xLH_base: 3000_installation_ibn/2000_inbetriebnahme_xlh.md
     - Divers: 3000_installation_ibn/3000_divers.md
+
 
 extra_css:
   - stylesheets/extra.css
