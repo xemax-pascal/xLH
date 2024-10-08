@@ -6,5 +6,5 @@
 @echo off
 cd /d %~dp0
 cd site_de
-dir
+
 browser-sync start --server --no-notify --files "*.html"

@@ -22,6 +22,11 @@ nav:
     - Inbetriebnahme xLH_base: 3000_installation_ibn/2000_inbetriebnahme_xlh.md
     - Divers: 3000_installation_ibn/3000_divers.md
 
+  - Hardware:
+    - xLH_base: 4000_hardware/1000_xlh_base.md
+    - xLH_power: 4000_hardware/1100_xlh_power.md
+    - xLH_touch: 4000_hardware/1200_xlh_touch.md
+    - xLH_uc_base: 4000_hardware/3000_xlh_uc_base.md
 
 extra_css:
   - stylesheets/extra.css
@@ -48,9 +53,7 @@ theme:
 #    - navigation.instant.progress
     - navigation.tracking
 #    - navigation.sections
-
     - navigation.expand
-
     - navigation.indexes
     - navigation.path
     - search.suggest
