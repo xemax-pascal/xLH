@@ -4,9 +4,14 @@ comments: true
 
 ![Image Aufgabe Pneumatik](../assets/img/lernpfad_1a_pneumatik.png){ style="width:50%"}
 
-=== "Aufgabenstellung"
-    Sobald das Signalglied 1S1 oder 1S2 gedrückt wird (Impuls), soll der Zylinder 1A1 im Dauerzyklus schnell ausfahren, 5 Sekunden verharren und dann langsam wieder einfahren, bis das Signalglied 1S3 gedrückt wird. Der Zylinder 1A1 fäührt ein und bleibt eingefahren.
-    Hinweis: Der Zyklusstart ist nur möglich, wenn der Zylinder eingefahren ist.
+=== "Mögliche Arbeitssituation"
+    An einer automatisierten Montagelinie soll von zwei verschiedenen Orten ein Zylinder (Weiche) gestartet werden, 
+    um die Bauteile auf den Bändern auf zwei folgende Montagelinien zu verteilen. Sobald der Start erfolgt ist, 
+    schaltet der automatische Zyklus ein. Die Weiche schaltet sofort um, bleibt 5s in Position und fährt dann 
+    langsam wieder zurück. Dieser Zyklus wiederholt sich automatisch, bis die STOP-Taste betätigt wird. 
+    Wenn die Weiche nicht schon in Grundposition ist fährt sie dahin und bleibt stehen.  
+    <br>
+    Löse, die Lernaufgabe mit einer reinen pneumatischen Schaltung.
 
 === "Lernfelder"
     | ID LFE                                                                                                                                                       | Name LFE                         |

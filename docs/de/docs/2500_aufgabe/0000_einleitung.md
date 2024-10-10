@@ -10,4 +10,4 @@ Lernpfade ermöglichen eine individualisierte Ausbildung in der Berufsfachschule
 
 ## Lernpfad Pneumatik - VPS -SPS
 
-![Image Aufgabe Pneumatik](../assets/img/aufgabe_pneumatik.png){ align=left }
+![Image Aufgabe Pneumatik](../assets/img/lernpfad_pneumatik_vps_sps.png){style="width:100%"}

@@ -5,8 +5,14 @@ comments: true
 ![Image Aufgabe Pneumatik](../assets/img/lernpfad_1b_logik_vps.png){ style="width:50%"}
 
 
-=== "Aufgabenstellung"
-    ToDo: Aufgabenstellung formulieren
+=== "Mögliche Arbeitssituation"
+    An einer automatisierten Montagelinie soll von zwei verschiedenen Orten ein Zylinder (Weiche) gestartet werden, 
+    um die Bauteile auf den Bändern auf zwei folgende Montagelinien zu verteilen. Sobald der Start erfolgt ist, 
+    schaltet der automatische Zyklus ein. Die Weiche schaltet sofort um, bleibt 5s in Position und fährt dann langsam 
+    wieder zurück. Dieser Zyklus wiederholt sich automatisch, bis die STOP-Taste betätigt wird. Wenn die Weiche nicht 
+    schon in Grundposition ist fährt sie dahin und bleibt stehen.  
+    <br>
+    Löse, die Lernaufgabe mit einer elektropneumatischen Schaltung (Logik über VPS).
 
 === "Lernfelder"
     | ID LFE                                                                                                                                                       | Name LFE                                                               |
