@@ -2,7 +2,7 @@
 comments: true
 ---
 
-![Image Aufgabe Pneumatik](../assets/img/dummy.gif){ align=left }
+![Image Aufgabe Pneumatik](../assets/img/lernpfad_1e_simulation_mit_sps.gif){ style="width:100%"}
 
 === "Aufgabenstellung"
     ToDo: Aufgabenstellung formulieren

@@ -14,7 +14,7 @@ while ctr < 100 or True:
     fluidsim.update()
     # print(fluidsim.value_rx, fluidsim.value_tx)
     time.sleep(0.005)
-    print(f'''{fluidsim.value_rx:03d} | {fluidsim.value_tx:03d} | {time.perf_counter():03.0f}s'| {((time.perf_counter() - start_time)*100.0):02.01f}ms''')
+    print(f'''{fluidsim.value_rx:03d} | {fluidsim.value_tx:03d} | {time.perf_counter():03.03f}s| {((time.perf_counter() - start_time)*1000.0):02.01f}ms''')
 
 fluidsim.disconnect()
 plc_opcua.disconnect()
