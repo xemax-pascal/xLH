@@ -11,6 +11,17 @@ nav:
     - Didaktisches Konzept: index.md
     - HK - LFE - Orientierung: 1000_xlh/1000_hkp_lfe_orientierung.md
 
+  - Prototypischer Lernpfad Pneumatik - VPS - SPS:
+    - Einleitung: 2500_aufgabe/0000_einleitung.md
+    - 1a Pneumatik: 2500_aufgabe/1100_pneumatik.md
+    - 1b Logik VPS: 2500_aufgabe/1200_logik_vps.md
+    - 1c Logik SPS: 2500_aufgabe/1300_logik_sps.md
+    - 1d Visualisierung HMI: 2500_aufgabe/1400_sps_hmi.md
+    - 1e Simulation mit SPS: 2500_aufgabe/1500_sps_pneumatik_simu.md
+    - 1f Linearmotor: 2500_aufgabe/1600_lin_mot.md
+    - 1g Linearmotor Controller: 2500_aufgabe/1700_lin_mot_controller.md
+
+
   - Umsetzungsbeispiele:
     - SPS Einführung: 2000_beispiele/1000_sps.md
     - Portalroboter: 2000_beispiele/2000_portalroboter.md
@@ -126,11 +137,6 @@ copyright: |
   27.09.2024 - <a href="#__consent">Anpassung der Cookie-Richtlinien</a> - &copy; <a href="https://www.xemax.ch"  target="_blank" rel="noopener">xemax ag</a>
 
 plugins:
-  - search
-  - exclude-search:
-      exclude:
-        - playground/*
-        - data/*
 #  - mkdocs-jupyter:
 #      execute: true
 #      allow_errors: false
@@ -139,7 +145,8 @@ plugins:
 #      show_input: false
 #      no_input: true
 #  - privacy
-#  - glightbox
+  - glightbox
+  - search
 
 extra:
   homepage: https://xemax.ch
