@@ -5,7 +5,7 @@ comments: true
 === "Aufgabenstellung"
     ToDo: Aufgabenstellung formulieren
 
-=== "Lernfelder"
+=== "Mögliche Lernfelder"
     | ID LFE                                                                                                                                                       | Name LFE                                                                                                       |
     | :----------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_00/#4ABDBD42-BE55-A54C-8DEE-16DDE576B8DB" target="_blank">LFB_Aa_AaHa</a>       | Fehleranalyse Hardware                                                                                         |
