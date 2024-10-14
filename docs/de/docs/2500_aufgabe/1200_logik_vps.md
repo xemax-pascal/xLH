@@ -2,18 +2,6 @@
 comments: true
 ---
 
-![Image Aufgabe Pneumatik](../assets/img/lernpfad_1b_logik_vps.png){ style="width:50%"}
-
-
-=== "Mögliche Arbeitssituation"
-    An einer automatisierten Montagelinie soll von zwei verschiedenen Orten ein Zylinder (Weiche) gestartet werden, 
-    um die Bauteile auf den Bändern auf zwei folgende Montagelinien zu verteilen. Sobald der Start erfolgt ist, 
-    schaltet der automatische Zyklus ein. Die Weiche schaltet sofort um, bleibt 5s in Position und fährt dann langsam 
-    wieder zurück. Dieser Zyklus wiederholt sich automatisch, bis die STOP-Taste betätigt wird. Wenn die Weiche nicht 
-    schon in Grundposition ist fährt sie dahin und bleibt stehen.  
-    <br>
-    Löse, die Lernaufgabe mit einer elektropneumatischen Schaltung (Logik über VPS).
-
 === "Mögliche Lernfelder"
     | ID LFE                                                                                                                                                       | Name LFE                                                               |
     | :----------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- |
@@ -39,3 +27,14 @@ comments: true
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_02/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Tg_bew_auf_2</a>  | Bewegende Technik Aufbau                                               |
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_02/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Tg_bew_bas</a>    | Bewegende Technik Basis                                                |
 
+=== "Mögliche Arbeitssituation"
+    An einer automatisierten Montagelinie soll von zwei verschiedenen Orten ein Zylinder (Weiche) gestartet werden, 
+    um die Bauteile auf den Bändern auf zwei folgende Montagelinien zu verteilen. Sobald der Start erfolgt ist, 
+    schaltet der automatische Zyklus ein. Die Weiche schaltet sofort um, bleibt 5s in Position und fährt dann langsam 
+    wieder zurück. Dieser Zyklus wiederholt sich automatisch, bis die STOP-Taste betätigt wird. Wenn die Weiche nicht 
+    schon in Grundposition ist fährt sie dahin und bleibt stehen.  
+    <br>
+    Löse, die Lernaufgabe mit einer elektropneumatischen Schaltung (Logik über VPS).
+
+=== "Mögliche Lösung"
+    ![Image Aufgabe Pneumatik](../assets/img/lernpfad_1b_logik_vps.png){ style="width:75%"}

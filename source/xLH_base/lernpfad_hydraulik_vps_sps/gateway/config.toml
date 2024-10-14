@@ -1,0 +1,15 @@
+[plc_xLH]
+ip = "192.168.31.31"
+port = 4840
+user = ""
+password = ""
+# OPC-UA Pfar rx tx
+
+
+[fluidsim]
+server='FLSIMP'
+topic='IOPanel'
+item_rx='GET_0'
+item_tx='SET_0'
+
+# https://toml.io/en/

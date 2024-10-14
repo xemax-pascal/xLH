@@ -2,10 +2,18 @@
 comments: true
 ---
 
-![Image Aufgabe Pneumatik](../assets/img/lernpfad_1e_simulation_mit_sps.gif){ style="width:100%"}
+ToDo Formulierung der Systemstruktur:
 
-=== "Aufgabenstellung"
-    ToDo: Aufgabenstellung formulieren
+- Fluidsim als Simulationsumgebung Pneumatik
+- SPS xLH_base für die Verarbeitung der Logik
+- Gateway zwischen Fluidsim und xLH_base via DDE zu OPC-UA Kommunikation
+    - Umsetzung in der Form einer Windows - Exe bzw. Aufruf Pythoninterpreter aus dem Quellcode 
+      <a href="https://github.com/xemax-pascal/xLH/tree/d89240d792d0439d9b8d1979ac4f5fef00753786/source/xLH_base/lernpfad_hydraulik_vps_sps/gateway" target="_blank">Quellcode GitHub</a>
+- Erstellung Skizze.....
+
+Video der Umsetzung in der die nahtlose Integration aufgezeigt wird.
+
+![Image Aufgabe Pneumatik](../assets/img/lernpfad_1e_simulation_mit_sps.gif){ style="width:100%"}
 
 === "Mögliche Lernfelder"
     | ID LFE                                                                                                                                                       | Name LFE                                                                                                       |
@@ -34,3 +42,9 @@ comments: true
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_03/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Pv_BAS</a>        | Programmieren und Visualisieren                                                                                |
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_03/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Pv_PrgVisu_la</a> | Software und Visualisierungen von automatisierten Anlagen laden                                                |
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_03/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Pv_PrgVisu_pt</a> | Software und Visualisierungen von automatisierten Anlagen programmieren und testen                             |
+
+=== "Mögliche Aufgabenstellung"
+    ToDo: Aufgabenstellung formulieren
+
+=== "Mögliche Lösung"
+    ![Image Aufgabe Pneumatik](../assets/img/lernpfad_1e_simulation_mit_sps.gif){ style="width:100%"}

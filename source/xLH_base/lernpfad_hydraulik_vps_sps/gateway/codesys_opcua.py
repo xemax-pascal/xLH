@@ -8,6 +8,8 @@ class CodesysOpcUa:
     def __init__(self, ip_plc='192.168.31.31', port=4840, fluidsim: FluidsimDdeClient = None):
         self.ip_plc = ip_plc
         self.port_plc = port
+        # self.user_plc = 'xlh'
+        # self.password_plc = 'xlh'
         self.fluidsim = fluidsim
 
         self._opcua_client = None
@@ -19,6 +21,8 @@ class CodesysOpcUa:
 
     def connect(self):
         self._opcua_client = Client(f'opc.tcp://{self.ip_plc}:{self.port_plc}')
+        # self._opcua_client.set_user(self.user_plc)
+        # self._opcua_client.set_password(self.password_plc)
         self._opcua_client.connect()
         root = self._opcua_client.get_root_node()
         plc_name = "4:CODESYS Control for Raspberry Pi 64 SL"

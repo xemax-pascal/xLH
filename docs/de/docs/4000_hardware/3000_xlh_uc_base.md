@@ -4,6 +4,8 @@ comments: true
 
 Basisboard uController.
 
+![Image Aufgabe Pneumatik](../assets/img/xLH_uc_base.jpg){style="width:40%"}
+
 ## Featureset
 
 - STM32 L432KC Arm Cortex-M4 FPU MCU 80 MHz / 64kB SRAM / 256 kB Flash

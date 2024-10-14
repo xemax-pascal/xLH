@@ -14,3 +14,12 @@ mkdocs-jupyter==0.24.7
 mkdocs-exclude-search==0.6.6
 mkdocs-macros-plugin==1.0.5
 
+opcua==0.98.13
+cryptography==42.0.8
+pywin32==308
+tomli==2.0.2
+rich==13.9.2
+textual==0.83.0
+PyGetWindow==0.0.9
+pyinstaller==6.10.0
+

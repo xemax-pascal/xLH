@@ -2,9 +2,6 @@
 comments: true
 ---
 
-=== "Aufgabenstellung"
-    ToDo: Aufgabenstellung formulieren
-
 === "Mögliche Lernfelder"
     | ID LFE                                                                                                                                                       | Name LFE                                                                                                       |
     | :----------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
@@ -31,3 +28,6 @@ comments: true
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_03/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Pv_BAS</a>        | Programmieren und Visualisieren                                                                                |
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_03/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Pv_PrgVisu_la</a> | Software und Visualisierungen von automatisierten Anlagen laden                                                |
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_03/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Pv_PrgVisu_pt</a> | Software und Visualisierungen von automatisierten Anlagen programmieren und testen                             |
+
+=== "Mögliche Aufgabenstellung"
+    ToDo: Aufgabenstellung formulieren

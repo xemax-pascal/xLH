@@ -4,6 +4,8 @@ comments: true
 
 Embedded-Rechner mit Fokusierung auf Portabilität und Preis.
 
+![Image Aufgabe Pneumatik](../assets/img/xLH_base.jpg){style="width:30%"}
+
 ## Featureset
 
 - Rechner

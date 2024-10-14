@@ -1,0 +1,6 @@
+- Integration toml-Konfiguration
+    - OPC-UA Konfiguration implementieren
+
+- Allgemeine Umsetzung PyInstaller Build-Script
+
+- Anpassung der Grösse Terminal-Gateway

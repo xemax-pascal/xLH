@@ -12,5 +12,6 @@ Lernpfade ermöglichen eine individualisierte Ausbildung in der Berufsfachschule
 
 ![Image Aufgabe Pneumatik](../assets/img/lernpfad_pneumatik_vps_sps.png){style="width:100%"}
 
-Für das Bearbeiten der Aufgaben orientiert man sich an der Methode IPERKA. Das konkrete Ausschaffen der einzelnen Aufgabenstellungen wird hier nicht behandelt.
-Ziel ist es aufzuzeigen, wie mit einer durchgängigen Toolchain und individuell-verfügbaren HW, kosten-optimiert, die geforderte Handlungskompetenzorientierung umgesetzt werden kann.
+Für das Bearbeiten der Aufgaben orientiert man sich an der Methode IPERKA. Das konkrete Ausarbeiten der einzelnen 
+Aufgabenstellungen wird hier **nicht** behandelt. Ziel ist es aufzuzeigen, wie mit einer durchgängigen Toolchain 
+und individuell-verfügbaren HW, kosten-optimiert, die geforderte Handlungskompetenzorientierung umgesetzt werden kann.
