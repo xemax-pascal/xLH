@@ -3,13 +3,14 @@ ip = "192.168.31.31"
 port = 4840
 user = ""
 password = ""
-# OPC-UA Pfar rx tx
-
+opcua_node_root_base = ["0:Objects", "2:DeviceSet", "4:CODESYS Control for Raspberry Pi 64 SL", "3:Resources", "4:app", "3:Programs"]
+opcua_node_byin = ["4:io_fs", "4:byFluidsimIn"]
+opcua_node_byout = ["4:io_fs", "4:byFluidsimOut"]
 
 [fluidsim]
-server='FLSIMP'
-topic='IOPanel'
-item_rx='GET_0'
-item_tx='SET_0'
+server="FLSIMP"
+topic="IOPanel"
+item_rx="GET_0"
+item_tx="SET_0"
 
 # https://toml.io/en/

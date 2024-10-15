@@ -27,9 +27,9 @@ class CodesysOpcUa:
         root = self._opcua_client.get_root_node()
         plc_name = "4:CODESYS Control for Raspberry Pi 64 SL"
         node_root_base = ['0:Objects', '2:DeviceSet', plc_name,
-                          '3:Resources', '4:app', '3:Programs', '4:io_fs']
-        self._byIn_node = root.get_child(node_root_base + ['4:byFluidsimIn'])
-        self._byOut_node = root.get_child(node_root_base + ['4:byFluidsimOut'])
+                          '3:Resources', '4:app', '3:Programs']
+        self._byIn_node = root.get_child(node_root_base + ["4:io_fs", '4:byFluidsimIn'])
+        self._byOut_node = root.get_child(node_root_base + ["4:io_fs", '4:byFluidsimOut'])
 
     def disconnect(self):
         self._opcua_client.disconnect()
