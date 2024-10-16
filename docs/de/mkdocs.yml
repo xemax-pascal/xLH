@@ -16,8 +16,8 @@ nav:
     - 1a Pneumatik: 2500_aufgabe/1100_pneumatik.md
     - 1b Logik VPS: 2500_aufgabe/1200_logik_vps.md
     - 1c Logik SPS: 2500_aufgabe/1300_logik_sps.md
-    - 1d Visualisierung HMI: 2500_aufgabe/1400_sps_hmi.md
-    - 1e Simulation mit SPS: 2500_aufgabe/1500_sps_pneumatik_simu.md
+    - 1d Simulation mit SPS: 2500_aufgabe/1400_sps_pneumatik_simu.md
+    - 1e Visualisierung HMI: 2500_aufgabe/1500_sps_hmi.md
     - 1f Linearmotor: 2500_aufgabe/1600_lin_mot.md
     - 1g Linearmotor Controller: 2500_aufgabe/1700_lin_mot_controller.md
 

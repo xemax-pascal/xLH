@@ -7,13 +7,12 @@ ToDo Formulierung der Systemstruktur:
 - Fluidsim als Simulationsumgebung Pneumatik
 - SPS xLH_base für die Verarbeitung der Logik
 - Gateway zwischen Fluidsim und xLH_base via DDE zu OPC-UA Kommunikation
-    - Umsetzung in der Form einer Windows - Exe bzw. Aufruf Pythoninterpreter aus dem Quellcode 
-      <a href="https://github.com/xemax-pascal/xLH/tree/d89240d792d0439d9b8d1979ac4f5fef00753786/source/xLH_base/lernpfad_hydraulik_vps_sps/gateway" target="_blank">Quellcode GitHub</a>
-    - Variante 1 via DDE
-    - Variante 2 via OPC-UA
-
-
-![Image Aufgabe Pneumatik](../assets/img/lernpfad_sps_simulation_uebersicht.drawio.png){ style="width:50%"}
+    - Variante 1 via DDE => Verwendung einer Gateway-Applikation, einfach in der Anwendung aper proprietär
+        - Umsetzung in der Form einer Windows - Exe bzw. Aufruf Pythoninterpreter aus dem Quellcode
+        - <a href="https://github.com/xemax-pascal/xLH/tree/d89240d792d0439d9b8d1979ac4f5fef00753786/source/xLH_base/lernpfad_hydraulik_vps_sps/gateway" target="_blank">Quellcode GitHub</a>
+        - ![Image Aufgabe Pneumatik](../assets/img/lernpfad_sps_simulation_uebersicht.drawio.png){ style="width:50%"}
+    - Variante 2 via OPC-UA => Industriestandard, in der Anwendung anspruchsvoller
+    
 
 Exemplarische Arbeitssituation (zeit- und ortsunabhängig).
 
