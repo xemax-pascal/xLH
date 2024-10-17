@@ -6,7 +6,8 @@ def get_app_path():
         # If the application is run as a bundle, the PyInstaller bootloader
         # extends the sys module by a flag frozen=True and sets the app
         # path into variable _MEIPASS'.
-        app_path = sys._MEIPASS
+        # app_path = sys._MEIPASS
+        app_path = str(pathlib.Path(sys._MEIPASS).parents[0].as_posix())
     else:
         app_path = str(pathlib.Path(__file__).parents[1].as_posix())
     return app_path

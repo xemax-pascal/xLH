@@ -4,7 +4,7 @@ import time
 
 
 class FluidsimDdeClient:
-    def __init__(self, server='FLSIMP', topic='IOPanel', item_rx='GET_0', item_tx='SET_0'):
+    def __init__(self, server='FLUIDSIM', topic='IOPanel', item_rx='GET_0', item_tx='SET_0'):
         self.server = server
         self.topic = topic
         self.item_rx = item_rx
@@ -40,7 +40,9 @@ class FluidsimDdeClient:
         # Request data
         try:
             self.value_rx = int(self._conversation.Request(self.item_rx))
-            # print(f"Received data: {self.value_rx}")
+            # value_an_rx_1 = self._conversation.Request('AN_GET_0')
+            # value_an_rx_2 = self._conversation.Request('AN_GET_1')
+            # print(f"Received data: {value_an_rx_1} - {value_an_rx_2}")
         except Exception as e:
             print(f"Error in DDE request communication: {e}")
             self.disconnect()
@@ -64,8 +66,8 @@ if __name__ == "__main__":
     fs_client = FluidsimDdeClient()
     fs_client.connect()
 
-    for i in range(10):
-        fs_client.value_tx = i
+    for i in range(1000):
+        # fs_client.value_tx = i
         fs_client.update()
         time.sleep(0.05)
 

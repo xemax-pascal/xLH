@@ -1,11 +1,13 @@
 import time
 import pathlib
 import sys
+from app_config.get_app_path import get_app_path
 
 if not getattr(sys, 'frozen', False):
     __cwd__ = str(pathlib.Path(__file__).parents[0]).replace('\\', '/')
     # print(__cwd__)
     sys.path.append(__cwd__)
+print(get_app_path())
 
 from codesys_opcua import CodesysOpcUa
 from fluidsim_dde import FluidsimDdeClient
@@ -22,7 +24,7 @@ while ctr < 100 or True:
     fluidsim.update()
     # print(fluidsim.value_rx, fluidsim.value_tx)
     time.sleep(0.005)
-    print(f'''{fluidsim.value_rx:03d} | {fluidsim.value_tx:03d} | {time.perf_counter():03.03f}s| {((time.perf_counter() - start_time)*1000.0):02.01f}ms''')
+    print(f'''Gateway Fluidsim <=> xLH_base {fluidsim.value_rx:03d} | {fluidsim.value_tx:03d} | {time.perf_counter():03.03f}s| {((time.perf_counter() - start_time)*1000.0):02.01f}ms''')
 
 fluidsim.disconnect()
 plc_opcua.disconnect()
