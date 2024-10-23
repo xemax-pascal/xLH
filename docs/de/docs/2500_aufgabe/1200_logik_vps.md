@@ -23,10 +23,10 @@ comments: true
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_03/#431EE942-A82D-7C42-8AE8-2C77F4714B4A" target="_blank">LFB_Pn_PNEN</a>       | Pneumatikschaltungen entwickeln                                        |
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_03/#4720C9CC-BEE9-4647-B27B-DD1AE83B8C73" target="_blank">LFB_Pn_PNSS</a>       | Schemas skizzieren                                                     |
     | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_03/#6F4F2408-50A3-FC43-A6F4-B7E527BB2AA6" target="_blank">LFB_Pn_PNSZ</a>       | Schemen zeichnen                                                       |
-    | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_02/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Tg_bew_auf_1</a>  | Bewegende Technik Aufbau                                               |
-    | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_02/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Tg_bew_auf_2</a>  | Bewegende Technik Aufbau                                               |
-    | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_02/#CA4BFD57-C0ED-5648-BBD9-791CD4011384" target="_blank">LFB_Tg_bew_bas</a>    | Bewegende Technik Basis                                                |
-
+    | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_04/#8A5BA0A2-29A0-2B42-98C5-C9DC587F6E92" target="_blank">LFB_Tg_bew_auf_1</a>  | Bewegende Technik Aufbau         |
+    | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_04/#208EAF2E-F16F-3445-B787-45D5139E51F6" target="_blank">LFB_Tg_bew_auf_2</a>  | Bewegende Technik Aufbau         |
+    | <a href="https://futuremem-docs-xemax.eu.pythonanywhere.com/de/data/4000_lfe_04/#1603960C-39CD-2748-A30A-F63408867165" target="_blank">LFB_Tg_bew_bas</a>    | Bewegende Technik Basis          |
+    
 === "Mögliche Arbeitssituation"
     An einer automatisierten Montagelinie soll von zwei verschiedenen Orten ein Zylinder (Weiche) gestartet werden, 
     um die Bauteile auf den Bändern auf zwei folgende Montagelinien zu verteilen. Sobald der Start erfolgt ist, 
