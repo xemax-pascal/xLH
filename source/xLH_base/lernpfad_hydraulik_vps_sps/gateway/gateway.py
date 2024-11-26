@@ -1,13 +1,13 @@
 import time
 import pathlib
 import sys
-from app_config.get_app_path import get_app_path
+# from app_config.get_app_path import get_app_path
 
 if not getattr(sys, 'frozen', False):
     __cwd__ = str(pathlib.Path(__file__).parents[0]).replace('\\', '/')
     # print(__cwd__)
     sys.path.append(__cwd__)
-print(get_app_path())
+# print(get_app_path())
 
 from codesys_opcua import CodesysOpcUa
 from fluidsim_dde import FluidsimDdeClient
