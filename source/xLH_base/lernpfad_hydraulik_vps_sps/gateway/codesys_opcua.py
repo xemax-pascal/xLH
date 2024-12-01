@@ -5,9 +5,13 @@ import time
 
 
 class CodesysOpcUa:
-    def __init__(self, ip_plc='192.168.31.31', port=4840, fluidsim: FluidsimDdeClient = None):
+    def __init__(self, ip_plc='192.168.31.31',
+                 port=4840,
+                 plc_name='CODESYS Control for Raspberry Pi 64 SL',
+                 fluidsim: FluidsimDdeClient = None):
         self.ip_plc = ip_plc
         self.port_plc = port
+        self.plc_name = plc_name
         # self.user_plc = 'xlh'
         # self.password_plc = 'xlh'
         self.fluidsim = fluidsim
@@ -25,7 +29,7 @@ class CodesysOpcUa:
         # self._opcua_client.set_password(self.password_plc)
         self._opcua_client.connect()
         root = self._opcua_client.get_root_node()
-        plc_name = "4:CODESYS Control for Raspberry Pi 64 SL"
+        plc_name = f'4:{self.plc_name}'
         node_root_base = ['0:Objects', '2:DeviceSet', plc_name,
                           '3:Resources', '4:app', '3:Programs']
         self._byIn_node = root.get_child(node_root_base + ["4:io_fs", '4:byFluidsimIn'])

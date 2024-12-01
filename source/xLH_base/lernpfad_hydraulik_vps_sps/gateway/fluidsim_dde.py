@@ -1,3 +1,5 @@
+from time import sleep
+
 import win32ui  # pywin32
 import dde
 import time
@@ -15,6 +17,8 @@ class FluidsimDdeClient:
 
         self._server_obj = None
         self._conversation = None
+
+        self.connect()
 
     def connect(self):
         # Create DDE Client

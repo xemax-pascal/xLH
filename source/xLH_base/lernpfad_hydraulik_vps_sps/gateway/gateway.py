@@ -1,20 +1,27 @@
 import time
 import pathlib
 import sys
-# from app_config.get_app_path import get_app_path
 
 if not getattr(sys, 'frozen', False):
     __cwd__ = str(pathlib.Path(__file__).parents[0]).replace('\\', '/')
     # print(__cwd__)
     sys.path.append(__cwd__)
-# print(get_app_path())
 
+from config.config import Config
 from codesys_opcua import CodesysOpcUa
 from fluidsim_dde import FluidsimDdeClient
 
-fluidsim = FluidsimDdeClient()
-fluidsim.connect()
-plc_opcua = CodesysOpcUa(ip_plc='192.168.31.31', port=4840, fluidsim=fluidsim)
+config = Config()
+print(config)
+fluidsim = FluidsimDdeClient(server=config.fluidsim_dde_server,
+                             topic=config.fluidsim_dde_topic,
+                             item_rx=config.fluidsim_dde_item_rx,
+                             item_tx=config.fluidsim_dde_item_tx)
+
+plc_opcua = CodesysOpcUa(ip_plc=config.plc_ip,
+                         port=config.opcua_port,
+                         plc_name=config.opcua_plc_name,
+                         fluidsim=fluidsim)
 
 ctr = 0
 while ctr < 100 or True:
