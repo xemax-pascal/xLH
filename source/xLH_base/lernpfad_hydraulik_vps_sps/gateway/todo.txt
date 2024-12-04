@@ -1,8 +1,0 @@
-- Integration toml-Konfiguration
-    - OPC-UA Konfiguration implementieren
-    - Singletonintegration
-    - Möglichkeit der Parameterübergabe integrieren
-
-- Allgemeine Umsetzung PyInstaller Build-Script
-
-- Anpassung der Grösse Terminal-Gateway
