@@ -1,0 +1,7 @@
+https://medium.com/@kardelenyurtkuran/snap7-python-communication-with-siemens-plc-41829626b2b0
+https://pypi.org/project/python-snap7/
+https://www.youtube.com/watch?v=xSTfmCdepyw
+
+https://github.com/gijzelaerr/python-snap7
+https://python-snap7.readthedocs.io/en/latest/
+

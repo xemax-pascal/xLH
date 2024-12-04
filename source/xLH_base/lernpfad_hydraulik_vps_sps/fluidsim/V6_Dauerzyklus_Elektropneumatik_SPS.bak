@@ -1,0 +1,1674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fluidtools2 creator="FluidSIM" version="6.2.2.1" file-id="8E9EBF2848DD11EF34F8624B">
+  <section type="circuits" count="1" total-count="1" name="V6_Dauerzyklus_Elektropneumatik_SPS">
+    <display-options inherit-line-jump-style="false" />
+    <basic-length M="1.5" unit="mm" />
+    <!--Unit conversion: 1 = 0.166666666666667 M = 0.25 mm = 0.0098425197 in-->
+    <auto-attrib-display inherit="false">
+      <attribute ident="~ObjectID" show="true" frame="true" frame-type="default" designation-pos="default" />
+      <attribute ident="~DKIType" show="true" designation-pos="default" />
+    </auto-attrib-display>
+    <simulation-properties inherit="true" auto-step="true" output-interval="0.001" slow-motion-factor="1" sync-screen="true" line-color-digi-hi="#FF00FF00" ideal-lines="false" />
+    <grafcet-properties inherit="true" grafcet-mode="1" grafcet-enable-monitoring="true" grafcet-pause-on-action-failed="true" grafcet-sound_on-action-failed="false" />
+    <physical-env-properties inherit="true">
+      <parameter ident="env_temp" value="20" unit="°C" />
+      <parameter ident="atmos_press" value="1000" unit="hPa" />
+    </physical-env-properties>
+    <physical-fluid-properties inherit="true">
+      <parameter ident="init_temp" value="20" unit="°C" />
+      <parameter ident="density40" value="865" unit="kg/m3" />
+      <parameter ident="density100" value="865" unit="kg/m3" />
+      <parameter ident="kin_visco40" value="22" unit="mm2/s" />
+      <parameter ident="kin_visco100" value="4.4" unit="mm2/s" />
+      <parameter ident="bulk_mod_sim" value="18000000" unit="hPa" />
+      <parameter ident="spec_heat" value="2.1" unit="kJ/(kg.K)" />
+    </physical-fluid-properties>
+    <detailed-designation circuit-id="" inherit-verbose-variable="false" />
+    <section type="drawing-layers" inherit="false">
+      <drawing-layer ident="0" name="~LabelDrawingFrame" editable="false" />
+    </section>
+    <user-data />
+    <file name="V6_Dauerzyklus_Elektropneumatik_SPS.ct" internal-ID="20233">
+      <section type="properties" name="V6_Dauerzyklus_Elektropneumatik_SPS" page-number="1">
+        <drawing-size width="210" height="297" unit="mm" />
+        <basic-length M="1.5" unit="mm" />
+        <!--Unit conversion: 1 = 0.166666666666667 M = 0.25 mm = 0.0098425197 in-->
+        <display-options display-current-paths="true" />
+        <simulation-properties inherit="true" auto-step="true" output-interval="0.001" slow-motion-factor="1" sync-screen="true" line-color-digi-hi="#FF00FF00" ideal-lines="false" />
+        <grafcet-properties inherit="true" grafcet-mode="1" grafcet-enable-monitoring="true" grafcet-pause-on-action-failed="true" grafcet-sound_on-action-failed="false" />
+        <physical-env-properties inherit="true">
+          <parameter ident="env_temp" value="20" unit="°C" />
+          <parameter ident="atmos_press" value="1000" unit="hPa" />
+        </physical-env-properties>
+        <physical-fluid-properties inherit="true">
+          <parameter ident="init_temp" value="20" unit="°C" />
+          <parameter ident="density40" value="865" unit="kg/m3" />
+          <parameter ident="density100" value="865" unit="kg/m3" />
+          <parameter ident="kin_visco40" value="22" unit="mm2/s" />
+          <parameter ident="kin_visco100" value="4.4" unit="mm2/s" />
+          <parameter ident="bulk_mod_sim" value="18000000" unit="hPa" />
+          <parameter ident="spec_heat" value="2.1" unit="kJ/(kg.K)" />
+        </physical-fluid-properties>
+        <page-division row-tab-stops="0 25 50 75 100 125 150 175 200" col-tab-stops="0 80.250244140625 140.250244140625 213 306.30322265625 399.90185546875 487.50048828125 685.750244140625 840" inherit-from-current-paths="true">
+          <row-descriptions>A
+B
+C
+D
+E
+F
+G
+H</row-descriptions>
+          <col-descriptions>1
+2
+3
+4
+5
+6
+7
+8</col-descriptions>
+        </page-division>
+        <detailed-designation circuit-id="" />
+      </section>
+      <section type="symbol-graphics">
+        <symbol ident="sym1" width="47.9990234375" height="24">
+          <symbol-layer ident="default">
+            <line x1="-15.00048828125" y1="6" y2="12" />
+            <polyline points="-15.75048828125,9 -15.00048828125,12 -14.25048828125,9" fill-color="#FF000000" />
+            <line x1="-24.00048828125" y1="-3" x2="-18.00048828125" />
+            <line x1="17.99951171875" y1="-3" x2="23.99951171875" />
+            <line x1="-18.00048828125" y1="-12" y2="6" />
+            <line x1="-15.00048828125" y1="-12" y2="6" style="dot" />
+            <line x1="17.99951171875" y1="6" y2="-12" />
+            <line x1="-18.00048828125" y1="6" x2="17.99951171875" />
+            <circle cx="-0.00048828125" cy="-3" r="6" />
+            <line x1="-18.00048828125" y1="-12" x2="17.99951171875" />
+            <line x1="-4.24348828125" y1="-7.243" x2="4.24251171875" y2="1.243" />
+            <polyline points="-4.24348828125,-7.243 -3.18248828125,-5.121 -2.12148828125,-6.182" fill-color="#FF000000" />
+            <connector type="pneumatic" ident="1" designation="" cx="-24.00048828125" cy="-3" r="5" />
+            <connector type="pneumatic" ident="2" designation="" cx="23.99951171875" cy="-3" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym2" width="75" height="46.5">
+          <symbol-layer ident="CON2" ref-x="-37.5" ref-y="-0.75">
+            <line x1="51" y1="12" y2="24" />
+            <line x1="3" y1="12" y2="24" />
+            <connector type="pneumatic" ident="1" cx="3" cy="24" r="5" />
+            <connector type="pneumatic" ident="2" cx="51" cy="24" r="5" />
+          </symbol-layer>
+          <symbol-layer ident="B_S_1" ref-x="-37.5" ref-y="-0.75">
+            <line x1="54" y1="3" y2="12" />
+            <line x1="54" y1="-12" y2="-3" />
+            <line x1="0" y1="12" x2="54" />
+            <line x1="0" y1="-12" x2="54" />
+            <line x1="0" y1="-12" y2="12" />
+          </symbol-layer>
+          <symbol-layer ident="PS_2" ref-x="-31.5" ref-y="-0.75">
+            <rect x1="0" y1="-12" width="12" height="24" />
+            <polyline points="9,-7.5 3,-7.5 3,7.5 9,7.5 9,4.5 6,4.5 6,-4.5 9,-4.5 9,-7.5" fill-color="#FF000000" />
+          </symbol-layer>
+          <symbol-layer ident="CU_S_2" ref-x="-34.5" ref-y="-0.75">
+            <line x1="3" y1="22.5" x2="15" y2="-22.5" end-cap="arrow2" />
+            <rect x1="15" y1="-6" width="3" height="12" />
+            <rect x1="0" y1="-6" width="3" height="12" />
+          </symbol-layer>
+          <symbol-layer ident="PRS_1" ref-x="-16.5" ref-y="-0.75">
+            <rect x1="0" y1="-3" width="54" height="6" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym3" width="59.9990234375" height="30.2216796875">
+          <symbol-layer ident="default">
+            <line x1="-30.00048828125" y1="-4.92041015625" x2="-12.00048828125" />
+            <line x1="-18.00048828125" y1="-10.92041015625" y2="13.07958984375" style="dashdot" />
+            <line x1="-18.00048828125" y1="13.07958984375" x2="17.99951171875" style="dashdot" />
+            <line x1="-18.00048828125" y1="-10.92041015625" x2="17.99951171875" style="dashdot" />
+            <line x1="17.99951171875" y1="13.07958984375" y2="-10.92041015625" style="dashdot" />
+            <line x1="11.99951171875" y1="-4.92041015625" x2="29.99951171875" />
+            <line x1="-4.50048828125" y1="-0.42041015625000017" x2="2.99951171875" y2="-9.42041015625" />
+            <line x1="-12.00048828125" y1="-4.92041015625" y2="7.07958984375" />
+            <line x1="11.99951171875" y1="7.07958984375" y2="-4.92041015625" />
+            <arc cx="0.36751171875" cy="7.8545898437499995" r="12.257" start="54.119" end="126.1" />
+            <line x1="-12.00048828125" y1="7.07958984375" x2="-3.00048828125" />
+            <line x1="-0.13348828125" y1="10.95858984375" x2="4.49951171875" y2="7.07958984375" />
+            <line x1="-0.13348828125" y1="3.20058984375" x2="4.49951171875" y2="7.07958984375" />
+            <circle cx="-0.00048828125" cy="7.07958984375" r="3" />
+            <line x1="4.49951171875" y1="7.07958984375" x2="11.99951171875" />
+            <line x1="-0.59148828125" y1="-7.39241015625" x2="2.99951171875" y2="-9.42041015625" />
+            <line x1="-0.59148828125" y1="-7.39241015625" x2="1.42651171875" y2="-5.84641015625" />
+            <line x1="1.42651171875" y1="-5.84641015625" x2="2.99951171875" y2="-9.42041015625" />
+            <line x1="-12.00048828125" y1="-4.92041015625" x2="11.99951171875" />
+            <polyline points="2.99951171875,-9.42041015625 -0.59148828125,-7.39241015625 1.44251171875,-5.88241015625" fill-color="#FF000000" />
+            <arc cx="0.36751171875" cy="-17.85441015625" r="12.257" start="233.911" end="305.881" />
+            <circle cx="-12.00048828125" cy="-4.92041015625" r="1.5" fill-color="#FF000000" />
+            <circle cx="11.99951171875" cy="-4.92041015625" r="1.5" fill-color="#FF000000" />
+            <connector type="pneumatic" ident="1" designation="" cx="-30.00048828125" cy="-4.92041015625" r="5" />
+            <connector type="pneumatic" ident="2" designation="" cx="29.99951171875" cy="-4.92041015625" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym4" width="59.9990234375" height="30.2216796875">
+          <symbol-layer ident="default">
+            <line x1="-30.00048828125" y1="-4.92041015625" x2="-12.00048828125" />
+            <line x1="-18.00048828125" y1="-10.92041015625" y2="13.07958984375" style="dashdot" />
+            <line x1="-18.00048828125" y1="13.07958984375" x2="17.99951171875" style="dashdot" />
+            <line x1="-18.00048828125" y1="-10.92041015625" x2="17.99951171875" style="dashdot" />
+            <line x1="17.99951171875" y1="13.07958984375" y2="-10.92041015625" style="dashdot" />
+            <line x1="11.99951171875" y1="-4.92041015625" x2="29.99951171875" />
+            <line x1="-4.50048828125" y1="-0.42041015625000017" x2="2.99951171875" y2="-9.42041015625" />
+            <line x1="-12.00048828125" y1="-4.92041015625" y2="7.07958984375" />
+            <line x1="11.99951171875" y1="7.07958984375" y2="-4.92041015625" />
+            <arc cx="0.36751171875" cy="7.8545898437499995" r="12.257" start="54.119" end="126.1" />
+            <line x1="-12.00048828125" y1="7.07958984375" x2="-3.00048828125" />
+            <line x1="-0.13348828125" y1="10.95858984375" x2="4.49951171875" y2="7.07958984375" />
+            <line x1="-0.13348828125" y1="3.20058984375" x2="4.49951171875" y2="7.07958984375" />
+            <circle cx="-0.00048828125" cy="7.07958984375" r="3" />
+            <line x1="4.49951171875" y1="7.07958984375" x2="11.99951171875" />
+            <line x1="-0.59148828125" y1="-7.39241015625" x2="2.99951171875" y2="-9.42041015625" />
+            <line x1="-0.59148828125" y1="-7.39241015625" x2="1.42651171875" y2="-5.84641015625" />
+            <line x1="1.42651171875" y1="-5.84641015625" x2="2.99951171875" y2="-9.42041015625" />
+            <line x1="-12.00048828125" y1="-4.92041015625" x2="11.99951171875" />
+            <polyline points="2.99951171875,-9.42041015625 -0.59148828125,-7.39241015625 1.44251171875,-5.88241015625" fill-color="#FF000000" />
+            <arc cx="0.36751171875" cy="-17.85441015625" r="12.257" start="233.911" end="305.881" />
+            <circle cx="-12.00048828125" cy="-4.92041015625" r="1.5" fill-color="#FF000000" />
+            <circle cx="11.99951171875" cy="-4.92041015625" r="1.5" fill-color="#FF000000" />
+            <connector type="pneumatic" ident="1" designation="" cx="-30.00048828125" cy="-4.92041015625" r="5" />
+            <connector type="pneumatic" ident="2" designation="" cx="29.99951171875" cy="-4.92041015625" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym5" width="30" height="30">
+          <symbol-layer ident="default">
+            <rect x1="-15" y1="-15" width="30" height="30" color="#00FFFFFF" />
+          </symbol-layer>
+          <symbol-layer ident="default1">
+            <text x1="-11" y1="-0.66666666666666785" height="8" font="Segoe UI" halign="right">B1</text>
+            <line x1="-15" y1="6" y2="13" />
+          </symbol-layer>
+          <symbol-layer ident="default2">
+            <text x1="11" y1="-0.66666666666666785" height="8" font="Segoe UI">B2</text>
+            <line x1="15" y1="6" y2="13" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym6" width="15.9990234375" height="16">
+          <symbol-layer ident="default">
+            <line x1="-6.00048828125" y1="4" x2="5.99951171875" />
+            <line x1="-0.00048828125" y1="-5" x2="5.99951171875" y2="4" />
+            <line x1="-6.00048828125" y1="4" x2="-0.00048828125" y2="-5" />
+            <line x1="-6.00048828125" y1="4" x2="-0.00048828125" y2="-5" />
+            <line x1="-0.00048828125" y1="-8" y2="-5" />
+            <connector type="pneumatic" ident="1" designation="" cx="-0.00048828125" cy="-8" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym7" width="31" height="23">
+          <symbol-layer>
+            <text x1="0" y1="0" height="9" font="Arial" halign="center">1V1.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym8" width="38" height="23">
+          <symbol-layer>
+            <text x1="0" y1="0" height="9" font="Arial" halign="center">1V01.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym9" width="38" height="23">
+          <symbol-layer>
+            <text x1="0" y1="0" height="9" font="Arial" halign="center">1V02.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym10" width="31" height="23">
+          <symbol-layer>
+            <text x1="0" y1="0" height="9" font="Arial" halign="center">1A1</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym11" width="17.9990234375" height="12">
+          <symbol-layer ident="default">
+            <circle cx="-3.00048828125" cy="0" r="3" />
+            <line x1="-0.00048828125" y1="0" x2="8.99951171875" />
+            <connector type="electric" ident="1" designation="" cx="8.99951171875" cy="0" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym12" width="17.9990234375" height="12">
+          <symbol-layer ident="default">
+            <circle cx="-3.00048828125" cy="0" r="3" />
+            <line x1="-0.00048828125" y1="0" x2="8.99951171875" />
+            <connector type="electric" ident="1" designation="" cx="8.99951171875" cy="0" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym13" width="14.9990234375" height="30">
+          <symbol-layer ident="default">
+            <line x1="7.49951171875" y1="-15" y2="-6" />
+            <line x1="1.49951171875" y1="-6.3" x2="7.49951171875" y2="6" />
+            <line x1="-7.50048828125" y1="-4.5" y2="4.5" />
+            <line x1="7.49951171875" y1="6" y2="15" />
+            <line x1="-7.50048828125" y1="4.5" x2="-4.50048828125" />
+            <line x1="-7.50048828125" y1="0" x2="4.49951171875" style="dot" />
+            <line x1="-7.50048828125" y1="-4.5" x2="-4.50048828125" />
+            <connector type="electric" ident="1" designation="3" cx="7.49951171875" cy="-15" r="5" display-ref="O20162" />
+            <connector type="electric" ident="2" designation="4" cx="7.49951171875" cy="15" r="5" display-ref="O20163" />
+            <connector type="electric-label" ident="3" designation="S1" cx="0" cy="0" r="5" visible="false" />
+          </symbol-layer>
+          <symbol-layer ident="CAM" ref-x="-10.8936242684454" visible="false">
+            <line x1="2.1427092528510912" y1="-16.2" y2="-6" />
+            <line x1="-2.1" y1="-16.200015349226874" y2="-6.0000153492268744" />
+            <polyline points="-3.37276559788321,-14.9272497513434 0.0213469518121912,-18.3213623010388 3.41545950150759,-14.9272497513435" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym14" width="14.9990234375" height="30">
+          <symbol-layer ident="default">
+            <line x1="7.49951171875" y1="-15" y2="-6" />
+            <line x1="1.49951171875" y1="-6.3" x2="7.49951171875" y2="6" />
+            <line x1="-7.50048828125" y1="-4.5" y2="4.5" />
+            <line x1="7.49951171875" y1="6" y2="15" />
+            <line x1="-7.50048828125" y1="4.5" x2="-4.50048828125" />
+            <line x1="-7.50048828125" y1="0" x2="4.49951171875" style="dot" />
+            <line x1="-7.50048828125" y1="-4.5" x2="-4.50048828125" />
+            <connector type="electric" ident="1" designation="3" cx="7.49951171875" cy="-15" r="5" display-ref="O20164" />
+            <connector type="electric" ident="2" designation="4" cx="7.49951171875" cy="15" r="5" display-ref="O20165" />
+            <connector type="electric-label" ident="3" designation="S2" cx="0" cy="0" r="5" visible="false" />
+          </symbol-layer>
+          <symbol-layer ident="CAM" ref-x="-10.8936242684454" visible="false">
+            <line x1="2.1427092528510912" y1="-16.2" y2="-6" />
+            <line x1="-2.1" y1="-16.200015349226874" y2="-6.0000153492268744" />
+            <polyline points="-3.37276559788321,-14.9272497513434 0.0213469518121912,-18.3213623010388 3.41545950150759,-14.9272497513435" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym15" width="12" height="12">
+          <symbol-layer ident="default">
+            <connector type="electric" ident="1" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="2" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="3" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="4" cx="0" cy="0" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym16" width="48.6025390625" height="48">
+          <symbol-layer ident="default">
+            <line x1="-24.30322265625" y1="-18" y2="18" />
+            <line x1="11.696777343749998" y1="-18" y2="18" />
+            <line x1="-10.803222656250002" y1="-7.5" x2="-6.3032226562500009" y2="-3" />
+            <line x1="-6.3032226562500009" y1="-3" x2="-1.8032226562500011" y2="-7.5" />
+            <line x1="-24.30322265625" y1="18" x2="11.696777343749998" />
+            <line x1="-19.80322265625" y1="13.5" x2="-7.8032226562500009" />
+            <line x1="-16.80322265625" y1="12" x2="-10.803222656250002" />
+            <polyline points="-13.80322265625,13.5 -13.80322265625,12 -16.80322265625,12" fill-color="#FF000000" />
+            <polyline points="-19.80322265625,13.5 -13.80322265625,13.5 -16.80322265625,12" fill-color="#FF000000" />
+            <polyline points="-19.80322265625,9 -19.80322265625,13.5 -16.80322265625,12" fill-color="#FF000000" />
+            <polyline points="-19.80322265625,9 -16.80322265625,12 -16.80322265625,9" fill-color="#FF000000" />
+            <line x1="-19.80322265625" y1="9" y2="13.5" />
+            <line x1="-19.80322265625" y1="9" x2="-16.80322265625" />
+            <line x1="-16.80322265625" y1="9" y2="12" />
+            <line x1="-6.3032226562500009" y1="18" y2="24" />
+            <line x1="-6.3032226562500009" y1="18" y2="24" />
+            <line x1="-13.803222656250002" y1="13.5" x2="-7.8032226562500009" />
+            <line x1="-13.803222656250002" y1="12" x2="-10.803222656250002" />
+            <polyline points="-10.80322265625,12 -13.80322265625,12 -13.80322265625,13.5" fill-color="#FF000000" />
+            <polyline points="-10.80322265625,12 -13.80322265625,13.5 -7.80322265625,13.5" fill-color="#FF000000" />
+            <polyline points="-10.80322265625,12 -7.80322265625,13.5 -7.80322265625,9" fill-color="#FF000000" />
+            <polyline points="-7.80322265625,9 -10.80322265625,9 -10.80322265625,12" fill-color="#FF000000" />
+            <line x1="-10.803222656250002" y1="9" x2="-7.8032226562500009" />
+            <line x1="-10.803222656250002" y1="9" x2="-7.8032226562500009" />
+            <line x1="-10.803222656250002" y1="9" y2="12" />
+            <line x1="-10.803222656250002" y1="12" y2="9" />
+            <line x1="-7.8032226562500009" y1="13.5" y2="9" />
+            <line x1="-7.8032226562500009" y1="9" y2="13.5" />
+            <line x1="-19.80322265625" y1="6" x2="-11.553222656250002" />
+            <line x1="-10.803222656250002" y1="6" x2="-1.8032226562500011" y2="1.5" />
+            <line x1="-12.303222656250002" y1="6" x2="-10.803222656250002" />
+            <line x1="-2.5532226562500009" y1="6" x2="5.6967773437499991" />
+            <line x1="17.55077734375" y1="2.457" y2="5.832" />
+            <line x1="20.92577734375" y1="5.832" y2="2.457" />
+            <line x1="20.92577734375" y1="5.832" x2="24.30077734375" />
+            <line x1="14.17577734375" y1="5.832" x2="17.55077734375" />
+            <line x1="17.55077734375" y1="2.457" x2="20.92577734375" />
+            <line x1="11.696777343749998" y1="0" x2="23.69677734375" />
+            <line x1="-24.30322265625" y1="-18" x2="11.696777343749998" />
+            <line x1="-6.3032226562500009" y1="-18" y2="-24" />
+            <line x1="-7.8032226562500009" y1="-10.5" y2="-4.5" />
+            <line x1="-4.8032226562500009" y1="-10.5" y2="-4.5" />
+            <line x1="-10.803222656250002" y1="-7.5" x2="-6.3032226562500009" y2="-12" />
+            <line x1="-6.3032226562500009" y1="-12" x2="-1.8032226562500011" y2="-7.5" />
+            <connector type="electric" ident="1" designation="" cx="-6.30322265625" cy="-24" r="5" />
+            <connector type="electric" ident="2" designation="" cx="-6.30322265625" cy="24" r="5" />
+            <connector type="electric" ident="3" designation="" cx="23.69677734375" cy="0" r="5" />
+            <connector type="electric-label" ident="4" designation="B1" cx="0" cy="0" r="5" visible="false" />
+          </symbol-layer>
+          <symbol-layer ident="CAM" ref-x="-27.6953820809454">
+            <line x1="2.1427092528510912" y1="-16.2" y2="-6" />
+            <line x1="-2.1" y1="-16.200015349226874" y2="-6.0000153492268744" />
+            <polyline points="-3.37276559788321,-14.9272497513434 0.0213469518121912,-18.3213623010388 3.41545950150759,-14.9272497513435" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym17" width="12" height="12">
+          <symbol-layer ident="default">
+            <connector type="electric" ident="1" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="2" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="3" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="4" cx="0" cy="0" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym18" width="48.6025390625" height="48">
+          <symbol-layer ident="default">
+            <line x1="-24.30322265625" y1="-18" y2="18" />
+            <line x1="11.696777343749998" y1="-18" y2="18" />
+            <line x1="-10.803222656250002" y1="-7.5000000000000009" x2="-6.3032226562500009" y2="-3.0000000000000009" />
+            <line x1="-6.3032226562500009" y1="-3.0000000000000009" x2="-1.8032226562500011" y2="-7.5000000000000009" />
+            <line x1="-24.30322265625" y1="18" x2="11.696777343749998" />
+            <line x1="-19.80322265625" y1="13.5" x2="-7.8032226562500009" />
+            <line x1="-16.80322265625" y1="12" x2="-10.803222656250002" />
+            <polyline points="-13.80322265625,13.5 -13.80322265625,12 -16.80322265625,12" fill-color="#FF000000" />
+            <polyline points="-19.80322265625,13.5 -13.80322265625,13.5 -16.80322265625,12" fill-color="#FF000000" />
+            <polyline points="-19.80322265625,9 -19.80322265625,13.5 -16.80322265625,12" fill-color="#FF000000" />
+            <polyline points="-19.80322265625,9 -16.80322265625,12 -16.80322265625,9" fill-color="#FF000000" />
+            <line x1="-19.80322265625" y1="9" y2="13.5" />
+            <line x1="-19.80322265625" y1="9" x2="-16.80322265625" />
+            <line x1="-16.80322265625" y1="9" y2="12" />
+            <line x1="-6.3032226562500009" y1="18" y2="24" />
+            <line x1="-6.3032226562500009" y1="18" y2="24" />
+            <line x1="-13.803222656250002" y1="13.5" x2="-7.8032226562500009" />
+            <line x1="-13.803222656250002" y1="12" x2="-10.803222656250002" />
+            <polyline points="-10.80322265625,12 -13.80322265625,12 -13.80322265625,13.5" fill-color="#FF000000" />
+            <polyline points="-10.80322265625,12 -13.80322265625,13.5 -7.80322265625,13.5" fill-color="#FF000000" />
+            <polyline points="-10.80322265625,12 -7.80322265625,13.5 -7.80322265625,9" fill-color="#FF000000" />
+            <polyline points="-7.80322265625,9 -10.80322265625,9 -10.80322265625,12" fill-color="#FF000000" />
+            <line x1="-10.803222656250002" y1="9" x2="-7.8032226562500009" />
+            <line x1="-10.803222656250002" y1="9" x2="-7.8032226562500009" />
+            <line x1="-10.803222656250002" y1="9" y2="12" />
+            <line x1="-10.803222656250002" y1="12" y2="9" />
+            <line x1="-7.8032226562500009" y1="13.5" y2="9" />
+            <line x1="-7.8032226562500009" y1="9" y2="13.5" />
+            <line x1="-19.80322265625" y1="5.9999999999999991" x2="-11.553222656250002" />
+            <line x1="-10.803222656250002" y1="5.9999999999999991" x2="-1.8032226562500011" y2="1.4999999999999993" />
+            <line x1="-12.303222656250002" y1="5.9999999999999991" x2="-10.803222656250002" />
+            <line x1="-2.5532226562500009" y1="5.9999999999999991" x2="5.6967773437499991" />
+            <line x1="17.55077734375" y1="2.4569999999999994" y2="5.831999999999999" />
+            <line x1="20.92577734375" y1="5.831999999999999" y2="2.4569999999999994" />
+            <line x1="20.92577734375" y1="5.831999999999999" x2="24.30077734375" />
+            <line x1="14.17577734375" y1="5.831999999999999" x2="17.55077734375" />
+            <line x1="17.55077734375" y1="2.4569999999999994" x2="20.92577734375" />
+            <line x1="11.696777343749998" y1="-7.1009821286938113E-16" x2="23.69677734375" />
+            <line x1="-24.30322265625" y1="-18" x2="11.696777343749998" />
+            <line x1="-6.3032226562500009" y1="-18" y2="-24" />
+            <line x1="-7.8032226562500009" y1="-10.5" y2="-4.5000000000000009" />
+            <line x1="-4.8032226562500009" y1="-10.5" y2="-4.5000000000000009" />
+            <line x1="-10.803222656250002" y1="-7.5000000000000009" x2="-6.3032226562500009" y2="-12" />
+            <line x1="-6.3032226562500009" y1="-12" x2="-1.8032226562500011" y2="-7.5000000000000009" />
+            <connector type="electric" ident="1" designation="" cx="-6.30322265625" cy="-24" r="5" />
+            <connector type="electric" ident="2" designation="" cx="-6.30322265625" cy="24" r="5" />
+            <connector type="electric" ident="3" designation="" cx="23.69677734375" cy="0" r="5" />
+            <connector type="electric-label" ident="4" designation="B2" cx="0" cy="0" r="5" visible="false" />
+          </symbol-layer>
+          <symbol-layer ident="CAM" ref-x="-27.6953820809454" visible="false">
+            <line x1="2.1427092528510912" y1="-16.2" y2="-6" />
+            <line x1="-2.1" y1="-16.200015349226874" y2="-6.0000153492268744" />
+            <polyline points="-3.37276559788321,-14.9272497513434 0.0213469518121912,-18.3213623010388 3.41545950150759,-14.9272497513435" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym19" width="38.9990234375" height="30">
+          <symbol-layer ident="default">
+            <line x1="13.49951171875" y1="-6" x2="19.49951171875" y2="6" />
+            <line x1="13.49951171875" y1="6" x2="19.49951171875" y2="-6" />
+            <line x1="13.49951171875" y1="6" x2="19.49951171875" />
+            <line x1="13.49951171875" y1="-6" x2="19.49951171875" />
+            <line x1="-13.50048828125" y1="6" x2="-1.5004882812500002" y2="-6" />
+            <line x1="-19.50048828125" y1="-6" y2="6" />
+            <line x1="4.49951171875" y1="6" y2="-6" />
+            <line x1="-19.50048828125" y1="6" x2="4.49951171875" />
+            <line x1="4.49951171875" y1="0" x2="16.49951171875" style="dot" />
+            <line x1="-7.50048828125" y1="6" y2="15" />
+            <line x1="16.49951171875" y1="6" y2="12" />
+            <line x1="-19.50048828125" y1="-6" x2="4.49951171875" />
+            <line x1="-7.50048828125" y1="-6" y2="-15" />
+            <line x1="16.49951171875" y1="-12" y2="-6" />
+            <connector type="electric" ident="1" designation="" cx="-7.50048828125" cy="-15" r="5" />
+            <connector type="electric" ident="2" designation="" cx="-7.50048828125" cy="15" r="5" />
+            <connector type="electric-label" ident="3" designation="Y1" cx="0" cy="0" r="5" visible="false" />
+          </symbol-layer>
+          <symbol-layer ident="CAM" ref-x="-22.8936242684454" visible="false">
+            <line x1="2.1427092528510912" y1="-16.2" y2="-6" />
+            <line x1="-2.1" y1="-16.200015349226874" y2="-6.0000153492268744" />
+            <polyline points="-3.37276559788321,-14.9272497513434 0.0213469518121912,-18.3213623010388 3.41545950150759,-14.9272497513435" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym20" width="38.9990234375" height="30">
+          <symbol-layer ident="default">
+            <line x1="13.49951171875" y1="-6" x2="19.49951171875" y2="6" />
+            <line x1="13.49951171875" y1="6" x2="19.49951171875" y2="-6" />
+            <line x1="13.49951171875" y1="6" x2="19.49951171875" />
+            <line x1="13.49951171875" y1="-6" x2="19.49951171875" />
+            <line x1="-13.50048828125" y1="6" x2="-1.5004882812500002" y2="-6" />
+            <line x1="-19.50048828125" y1="-6" y2="6" />
+            <line x1="4.49951171875" y1="6" y2="-6" />
+            <line x1="-19.50048828125" y1="6" x2="4.49951171875" />
+            <line x1="4.49951171875" y1="0" x2="16.49951171875" style="dot" />
+            <line x1="-7.50048828125" y1="6" y2="15" />
+            <line x1="16.49951171875" y1="6" y2="12" />
+            <line x1="-19.50048828125" y1="-6" x2="4.49951171875" />
+            <line x1="-7.50048828125" y1="-6" y2="-15" />
+            <line x1="16.49951171875" y1="-12" y2="-6" />
+            <connector type="electric" ident="1" designation="" cx="-7.50048828125" cy="-15" r="5" />
+            <connector type="electric" ident="2" designation="" cx="-7.50048828125" cy="15" r="5" />
+            <connector type="electric-label" ident="3" designation="Y2" cx="0" cy="0" r="5" visible="false" />
+          </symbol-layer>
+          <symbol-layer ident="CAM" ref-x="-22.8936242684454" visible="false">
+            <line x1="2.1427092528510912" y1="-16.2" y2="-6" />
+            <line x1="-2.1" y1="-16.200015349226874" y2="-6.0000153492268744" />
+            <polyline points="-3.37276559788321,-14.9272497513434 0.0213469518121912,-18.3213623010388 3.41545950150759,-14.9272497513435" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym21" width="14.9990234375" height="30">
+          <symbol-layer ident="default">
+            <line x1="7.49951171875" y1="-15" y2="-6" />
+            <line x1="1.49951171875" y1="-6.3" x2="7.49951171875" y2="6" />
+            <line x1="-7.50048828125" y1="-4.5" y2="4.5" />
+            <line x1="7.49951171875" y1="6" y2="15" />
+            <line x1="-7.50048828125" y1="4.5" x2="-4.50048828125" />
+            <line x1="-7.50048828125" y1="0" x2="4.49951171875" style="dot" />
+            <line x1="-7.50048828125" y1="-4.5" x2="-4.50048828125" />
+            <connector type="electric" ident="1" designation="3" cx="7.49951171875" cy="-15" r="5" display-ref="O20166" />
+            <connector type="electric" ident="2" designation="4" cx="7.49951171875" cy="15" r="5" display-ref="O20167" />
+            <connector type="electric-label" ident="3" designation="S3" cx="0" cy="0" r="5" visible="false" />
+          </symbol-layer>
+          <symbol-layer ident="CAM" ref-x="-10.8936242684454" visible="false">
+            <line x1="2.1427092528510912" y1="-16.2" y2="-6" />
+            <line x1="-2.1" y1="-16.200015349226874" y2="-6.0000153492268744" />
+            <polyline points="-3.37276559788321,-14.9272497513434 0.0213469518121912,-18.3213623010388 3.41545950150759,-14.9272497513435" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym22" width="29" height="23">
+          <symbol-layer>
+            <text x1="0" y1="0" height="9" font="Arial" halign="center">0Z1.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym23" width="144" height="84">
+          <symbol-layer ident="default">
+            <line x1="-72" y1="-24" y2="42" />
+            <line x1="-72" y1="42" x2="72" />
+            <line x1="72" y1="42" y2="-24" />
+            <line x1="72" y1="-24" x2="-72" />
+            <line x1="-72" y1="-6" x2="72" />
+            <line x1="-72" y1="-6" y2="-24" />
+            <line x1="-54" y1="-6" y2="-24" />
+            <line x1="-36" y1="-6" y2="-24" />
+            <line x1="-63" y1="-24" y2="-42" />
+            <line x1="-45" y1="-24" y2="-42" />
+            <line x1="-18" y1="-6" y2="-24" />
+            <line x1="0" y1="-6" y2="-24" />
+            <line x1="18" y1="-6" y2="-24" />
+            <line x1="36" y1="-6" y2="-24" />
+            <line x1="54" y1="-6" y2="-24" />
+            <line x1="-27" y1="-24" y2="-42" />
+            <line x1="45" y1="-24" y2="-42" />
+            <line x1="63" y1="-24" y2="-42" />
+            <line x1="-9" y1="-24" y2="-42" />
+            <line x1="9" y1="-24" y2="-42" />
+            <line x1="27" y1="-24" y2="-42" />
+            <connector type="electric" ident="1" designation="" cx="-63" cy="-42" r="5" />
+            <connector type="electric" ident="2" designation="" cx="-45" cy="-42" r="5" />
+            <connector type="electric" ident="3" designation="" cx="-27" cy="-42" r="5" />
+            <connector type="electric" ident="4" designation="" cx="-9" cy="-42" r="5" />
+            <connector type="electric" ident="5" designation="" cx="9" cy="-42" r="5" />
+            <connector type="electric" ident="6" designation="" cx="27" cy="-42" r="5" />
+            <connector type="electric" ident="7" designation="" cx="45" cy="-42" r="5" />
+            <connector type="electric" ident="8" designation="" cx="63" cy="-42" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym24" width="12" height="12">
+          <symbol-layer ident="default">
+            <connector type="electric" ident="1" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="2" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="3" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="4" cx="0" cy="0" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym25" width="144" height="84">
+          <symbol-layer ident="default">
+            <line x1="-72" y1="24" y2="-42" />
+            <line x1="-72" y1="-42" x2="72" />
+            <line x1="72" y1="-42" y2="24" />
+            <line x1="72" y1="24" x2="-72" />
+            <line x1="-72" y1="6" x2="72" />
+            <line x1="-72" y1="6" y2="24" />
+            <line x1="-54" y1="6" y2="24" />
+            <line x1="-36" y1="6" y2="24" />
+            <line x1="-63" y1="24" y2="42" />
+            <line x1="-45" y1="24" y2="42" />
+            <line x1="-18" y1="6" y2="24" />
+            <line x1="-27" y1="24" y2="42" />
+            <line x1="0" y1="6" y2="24" />
+            <line x1="18" y1="6" y2="24" />
+            <line x1="36" y1="6" y2="24" />
+            <line x1="54" y1="6" y2="24" />
+            <line x1="45" y1="24" y2="42" />
+            <line x1="63" y1="24" y2="42" />
+            <line x1="-9" y1="24" y2="42" />
+            <line x1="9" y1="24" y2="42" />
+            <line x1="27" y1="24" y2="42" />
+            <connector type="electric" ident="1" designation="" cx="-63" cy="42" r="5" />
+            <connector type="electric" ident="2" designation="" cx="-45" cy="42" r="5" />
+            <connector type="electric" ident="3" designation="" cx="-27" cy="42" r="5" />
+            <connector type="electric" ident="4" designation="" cx="-9" cy="42" r="5" />
+            <connector type="electric" ident="5" designation="" cx="9" cy="42" r="5" />
+            <connector type="electric" ident="6" designation="" cx="27" cy="42" r="5" />
+            <connector type="electric" ident="7" designation="" cx="45" cy="42" r="5" />
+            <connector type="electric" ident="8" designation="" cx="63" cy="42" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym26" width="12" height="12">
+          <symbol-layer ident="default">
+            <connector type="electric" ident="1" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="2" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="3" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="4" cx="0" cy="0" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym27" width="12" height="12">
+          <symbol-layer ident="default">
+            <connector type="electric" ident="1" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="2" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="3" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="4" cx="0" cy="0" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym28" width="12" height="12">
+          <symbol-layer ident="default">
+            <connector type="electric" ident="1" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="2" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="3" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="4" cx="0" cy="0" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym29" width="12" height="12">
+          <symbol-layer ident="default">
+            <connector type="electric" ident="1" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="2" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="3" designation="" cx="0" cy="0" r="5" />
+            <connector type="electric" ident="4" cx="0" cy="0" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym30" width="144" height="48">
+          <symbol-layer ident="PLTL" ref-x="-36">
+            <line x1="-18" y1="0" y2="12" />
+            <line x1="-18" y1="0" x2="-7.607695154586736" y2="6" />
+            <line x1="-18" y1="12" x2="-7.607695154586736" y2="6" />
+            <rect x1="-18" y1="0" width="18" height="12" />
+          </symbol-layer>
+          <symbol-layer ident="AEML" ref-x="-54">
+            <line x1="-12" y1="12" x2="-6" y2="0" />
+            <rect x1="-18" y1="0" width="18" height="12" />
+            <connector type="electric-label" ident="1" designation="Y1" cx="-18" cy="6" r="5" display-ref="O20160" />
+          </symbol-layer>
+          <symbol-layer ident="AMANL1" ref-x="-54" ref-y="-12" scale-x="0.75" scale-y="0.75">
+            <line x1="0" y1="0" y2="16" />
+            <line x1="-15" y1="0" y2="12" />
+            <line x1="0" y1="3" x2="-15" />
+            <line x1="0" y1="9" x2="-15" />
+          </symbol-layer>
+          <symbol-layer ident="B5_2" ref-x="-36">
+            <line x1="30" y1="-12" y2="12" end-cap="arrow1" />
+            <line x1="18" y1="12" x2="6" y2="-12" end-cap="arrow1" />
+            <line x1="6" y1="12" y2="6" end-cap="ortho1" />
+            <rect x1="0" y1="-12" width="36" height="24" />
+          </symbol-layer>
+          <symbol-layer ident="CON5">
+            <line x1="30" y1="12" y2="24" />
+            <line x1="30" y1="-12" y2="-24" />
+            <line x1="18" y1="12" y2="24" />
+            <line x1="6" y1="12" y2="24" />
+            <line x1="6" y1="-12" y2="-24" />
+            <connector type="pneumatic" ident="1" designation="4" cx="6" cy="-24.000000715255737" r="5" display-ref="O20155" />
+            <connector type="pneumatic" ident="2" designation="2" cx="30" cy="-24.000000715255737" r="5" display-ref="O20156" />
+            <connector type="pneumatic" ident="3" designation="5" cx="6" cy="24.000000715255737" r="5" display-ref="O20157" />
+            <connector type="pneumatic" ident="4" designation="1" cx="18" cy="24.000000715255737" r="5" display-ref="O20158" />
+            <connector type="pneumatic" ident="5" designation="3" cx="30" cy="24.000000715255737" r="5" display-ref="O20159" />
+          </symbol-layer>
+          <symbol-layer ident="B5_4">
+            <line x1="6" y1="-12" y2="12" end-cap="arrow1" />
+            <line x1="18" y1="12" x2="30" y2="-12" end-cap="arrow1" />
+            <line x1="30" y1="12" y2="6" end-cap="ortho1" />
+            <rect x1="0" y1="-12" width="36" height="24" />
+          </symbol-layer>
+          <symbol-layer ident="PLTR" ref-x="36">
+            <line x1="18" y1="0" y2="12" />
+            <line x1="18" y1="0" x2="7.607695154586736" y2="6" />
+            <line x1="18" y1="12" x2="7.607695154586736" y2="6" />
+            <rect x1="0" y1="0" width="18" height="12" />
+          </symbol-layer>
+          <symbol-layer ident="AEMR" ref-x="54">
+            <line x1="12" y1="12" x2="6" y2="0" />
+            <rect x1="0" y1="0" width="18" height="12" />
+            <connector type="electric-label" ident="1" designation="Y2" cx="18" cy="6" r="5" display-ref="O20161" />
+          </symbol-layer>
+          <symbol-layer ident="AMANR1" ref-x="54" ref-y="-12" scale-x="0.75" scale-y="0.75">
+            <line x1="0" y1="0" y2="16" />
+            <line x1="15" y1="0" y2="12" />
+            <line x1="0" y1="3" x2="15" />
+            <line x1="0" y1="9" x2="15" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym31" width="10" height="8">
+          <symbol-layer ident="default">
+            <line x1="-5" y1="-4" x2="5" />
+            <line x1="5" y1="-4" x2="0" y2="4" />
+            <line x1="0" y1="4" x2="-5" y2="-4" />
+            <connector type="pneumatic" ident="1" designation="" cx="0" cy="-4" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym32" width="10" height="8">
+          <symbol-layer ident="default">
+            <line x1="-5" y1="-4" x2="5" />
+            <line x1="5" y1="-4" x2="0" y2="4" />
+            <line x1="0" y1="4" x2="-5" y2="-4" />
+            <connector type="pneumatic" ident="1" designation="" cx="0" cy="-4" r="5" />
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym33" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">1V1.4.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym34" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">1V1.2.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym35" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">1V1.5.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym36" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">1V1.1.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym37" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">1V1.3.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym38" width="16.704471588134766" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="right">1V1.Y1.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym39" width="16.704471588134766" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI">1V1.Y2.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym40" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">S1.3.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym41" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">S1.4.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym42" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">S2.3.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym43" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">S2.4.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym44" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">S3.3.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym45" width="10.180831909179688" height="16.672767639160156">
+          <symbol-layer>
+            <text x1="0" y1="0" height="8.25" font="Segoe UI" halign="center">S3.4.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym46" width="19.942670822143555" height="20.209417343139648">
+          <symbol-layer>
+            <text x1="0" y1="0" height="10" font="Segoe UI" halign="right">S1.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym47" width="19.942670822143555" height="20.209417343139648">
+          <symbol-layer>
+            <text x1="0" y1="0" height="10" font="Segoe UI" halign="right">S2.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym48" width="20.539459228515625" height="20.209417343139648">
+          <symbol-layer>
+            <text x1="0" y1="0" height="10" font="Segoe UI" halign="right">B1.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym49" width="20.539459228515625" height="20.209417343139648">
+          <symbol-layer>
+            <text x1="0" y1="0" height="10" font="Segoe UI" halign="right">B2.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym50" width="20.247846603393555" height="20.209417343139648">
+          <symbol-layer>
+            <text x1="0" y1="0" height="10" font="Segoe UI" halign="right">Y1.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym51" width="20.247846603393555" height="20.209417343139648">
+          <symbol-layer>
+            <text x1="0" y1="0" height="10" font="Segoe UI" halign="right">Y2.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+        <symbol ident="sym52" width="19.942670822143555" height="20.209417343139648">
+          <symbol-layer>
+            <text x1="0" y1="0" height="10" font="Segoe UI" halign="right">S3.~ObjectID</text>
+          </symbol-layer>
+        </symbol>
+      </section>
+      <section type="failure-models" />
+      <section type="drawing-layers">
+        <drawing-layer ident="0" name="~LabelDrawingFrame" editable="false" />
+      </section>
+      <section type="circuit-objects">
+        <component ident="O20097" x1="42.0009765625" y1="315" width="47.9990234375" height="24" fs4-name="PPE2" object-ref="Pneu.Supply.AirServiceUnit01" symbol-ref="sym1" layer-ref="1">
+          <parameter ident="error_mode" value="0" />
+          <const ident="qNN_f_err" value="10" unit="l/min" />
+          <const ident="picture" value="ppe2.pic" />
+          <parameter ident="p0_r" value="0.6" unit="MPa" />
+          <const ident="qNN_r" value="750" unit="l/min" />
+          <const ident="qNN_f" value="1000" unit="l/min" />
+          <output ident="p_manometer" unit="MPa" />
+          <dki-data>
+            <designation value="0Z1" display-ref="O20135" />
+            <description value="Wartungseinheit, vereinfachte Darstellung" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Wartungseinheit, vereinfachte Darstellung" internal-ID="20098" />
+          </user-data>
+          <connector ident="C1" con-ref="default.1" />
+          <connector ident="C2" con-ref="default.2" />
+        </component>
+        <component ident="O20099" x1="76.5" y1="50.75" width="75" height="46.5" fs4-name="CylDGPPAB" object-ref="Pneu.Actuator.CYL_CONF" symbol-ref="sym2" layer-ref="1">
+          <parameter ident="error_mode" value="0" />
+          <const ident="GLeak_err" value="1" unit="l/(min.bar)" />
+          <const ident="Fv_err" value="10000" unit="N.s/m" />
+          <const ident="pos_label" value="" />
+          <const ident="d_piston" value="20" unit="mm" />
+          <const ident="d_rod" value="8" unit="mm" />
+          <const ident="A_piston" value="3.14159265358979" unit="cm2" />
+          <const ident="A_ring" value="2.63893782901543" unit="cm2" />
+          <const ident="xMax" value="100" unit="mm" />
+          <parameter ident="F_extern_const" value="0" unit="N" />
+          <const ident="alpha" value="0" unit="deg" />
+          <const ident="connector_left" value="True" />
+          <const ident="connector_right" value="True" />
+          <const ident="cylNumber" value="1" />
+          <parameter ident="use_F_const" value="True" />
+          <parameter ident="auto_friction" value="True" />
+          <parameter ident="auto_mass" value="True" />
+          <const ident="F_var_ex" value="{0,0,50,0}" />
+          <const ident="F_var_re" value="{0,0,50,0}" />
+          <const ident="rod_left" value="False" />
+          <const ident="rod_right" value="True" />
+          <const ident="xStart" value="0" unit="mm" />
+          <const ident="GLeak" value="0" unit="l/(min.bar)" />
+          <const ident="m_cyl" value="0.162" unit="kg" />
+          <const ident="m_ext" value="0" unit="kg" />
+          <const ident="mu_B_ext" value="0" />
+          <const ident="mu_M_ext" value="0" />
+          <const ident="v_crit" value="0.01" unit="m/s" />
+          <const ident="dp_ref" value="6" unit="bar" />
+          <const ident="v_ref" value="1" unit="m/s" />
+          <const ident="F_ref" value="188.4" unit="N" />
+          <const ident="F_stat" value="19" unit="N" />
+          <const ident="spring_left" value="False" />
+          <const ident="spring_right" value="False" />
+          <const ident="p_spring_min" value="0.05" unit="MPa" />
+          <const ident="p_spring_max" value="0.1" unit="MPa" />
+          <const ident="damping_left" value="True" />
+          <const ident="damping_right" value="True" />
+          <const ident="len_damp" value="10" unit="mm" />
+          <output ident="x" unit="mm" />
+          <output ident="v" unit="m/s" />
+          <output ident="a" unit="m/s2" />
+          <output ident="F" unit="N" />
+          <output ident="F_spring" unit="N" />
+          <dki-data>
+            <symbol-name value="CONFCYL" />
+            <designation value="1V01" display-ref="O20110" />
+            <description value="Zylinder, doppeltwirkend" />
+          </dki-data>
+          <classification-data>
+            <type value="cylinder" />
+          </classification-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Zylinder, doppeltwirkend" internal-ID="20100" />
+          </user-data>
+          <connector ident="A" con-ref="CON2.1" />
+          <connector ident="B" con-ref="CON2.2" />
+        </component>
+        <component ident="O20101" x1="55.080078125" y1="122.8896484375" width="59.9990234375" height="30.2216796875" fs4-name="PVS4" object-ref="Pneu.FlowValve.ThrottleCheckValve" rotation="270" symbol-ref="sym3" layer-ref="1">
+          <parameter ident="picture" value="pvs4.pic" />
+          <parameter ident="error_mode" value="0" />
+          <parameter ident="level" value="5" unit="%" />
+          <const ident="qNN_n" value="45" unit="l/min" />
+          <const ident="qNN_cv" value="65" unit="l/min" />
+          <dki-data>
+            <designation value="?18820" />
+            <description value="Drosselrückschlagventil" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Drosselrückschlagventil" internal-ID="20102" />
+          </user-data>
+          <connector ident="B" con-ref="default.1" />
+          <connector ident="A" con-ref="default.2" />
+        </component>
+        <component ident="O20103" x1="103.080078125" y1="122.8896484375" width="59.9990234375" height="30.2216796875" fs4-name="PVS4" object-ref="Pneu.FlowValve.ThrottleCheckValve" rotation="270" symbol-ref="sym4" layer-ref="1">
+          <parameter ident="picture" value="pvs4.pic" />
+          <parameter ident="error_mode" value="0" />
+          <parameter ident="level" value="100" unit="%" />
+          <const ident="qNN_n" value="45" unit="l/min" />
+          <const ident="qNN_cv" value="65" unit="l/min" />
+          <dki-data>
+            <designation value="1V02" display-ref="O20111" />
+            <description value="Drosselrückschlagventil" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Drosselrückschlagventil" internal-ID="20104" />
+          </user-data>
+          <connector ident="B" con-ref="default.1" />
+          <connector ident="A" con-ref="default.2" />
+        </component>
+        <component ident="O20105" x1="151.5" y1="38.75" width="30" height="30" fs4-name="R_SCHALT" object-ref="Mech.FS3.DistanceRule" symbol-ref="sym5" layer-ref="1" parts-list="false">
+          <parameter ident="picture" value="r_schalt.pic" />
+          <const ident="x11" value="0" unit="mm" />
+          <const ident="x12" value="0" unit="mm" />
+          <const ident="x21" value="100" unit="mm" />
+          <const ident="x22" value="100" unit="mm" />
+          <const ident="x31" value="-1" unit="mm" />
+          <const ident="x32" value="-1" unit="mm" />
+          <const ident="x41" value="-1" unit="mm" />
+          <const ident="x42" value="-1" unit="mm" />
+          <const ident="x51" value="-1" unit="mm" />
+          <const ident="x52" value="-1" unit="mm" />
+          <const ident="x61" value="-1" unit="mm" />
+          <const ident="x62" value="-1" unit="mm" />
+          <const ident="label1" value="B1" />
+          <const ident="label2" value="B2" />
+          <const ident="label3" value="" />
+          <const ident="label4" value="" />
+          <const ident="label5" value="" />
+          <const ident="label6" value="" />
+          <dki-data>
+            <designation value="?18828" />
+            <description value="Wegmaßstab" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Wegmaßstab" internal-ID="20106" />
+          </user-data>
+        </component>
+        <component ident="O20107" x1="22.0009765625" y1="342" width="15.9990234375" height="16" fs4-name="PPE1" object-ref="Pneu.Supply.AirSupply" symbol-ref="sym6" layer-ref="1">
+          <const ident="picture" value="ppe1.pic" />
+          <parameter ident="pNom" value="0.6" unit="MPa" />
+          <parameter ident="qNom" value="1000" unit="l/min" />
+          <const ident="vol" value="0.1" unit="l" />
+          <output ident="pNom2" unit="MPa" />
+          <output ident="p" unit="MPa" />
+          <dki-data>
+            <designation value="?18829" />
+            <description value="Druckluftquelle" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Druckluftquelle" internal-ID="20108" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+        </component>
+        <text-box ident="O20109" x1="57.5" y1="218" width="31" height="23" fs4-name="text" symbol-ref="sym7" is-link="true" link-refs="20151" value="1V1" multi-link-refs="[20151]" auto-size="false" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18831" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20110" x1="52.5" y1="94" width="38" height="23" fs4-name="text" symbol-ref="sym8" is-link="true" link-refs="20099" value="1V01" multi-link-refs="[20099]" auto-size="false" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18832" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20111" x1="145.5" y1="96" width="38" height="23" fs4-name="text" symbol-ref="sym9" is-link="true" link-refs="20103" value="1V02" multi-link-refs="[20103]" auto-size="false" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18833" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20112" x1="100" y1="17" width="31" height="23" fs4-name="text" symbol-ref="sym10" auto-size="false" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18834" />
+          </dki-data>
+        </text-box>
+        <component ident="O20113" x1="18.0009765625" y1="378" width="17.9990234375" height="12" fs4-name="pol2" object-ref="ET.Source.Pot24V" symbol-ref="sym11" layer-ref="1">
+          <parameter ident="picture" value="e_g005.pic" />
+          <const ident="pot" value="24" unit="V" />
+          <dki-data>
+            <designation value="?18847" />
+            <description value="Spannungsquelle (24V)" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Spannungsquelle (24V)" internal-ID="20114" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+        </component>
+        <component ident="O20115" x1="12.0009765625" y1="672" width="17.9990234375" height="12" fs4-name="pol1" object-ref="ET.Source.Pot0V" symbol-ref="sym12" layer-ref="1">
+          <parameter ident="picture" value="e_g005.pic" />
+          <const ident="pot" value="0" unit="V" />
+          <dki-data>
+            <designation value="?18850" />
+            <description value="Spannungsquelle (0V)" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Spannungsquelle (0V)" internal-ID="20116" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+        </component>
+        <component ident="O20117" x1="39.0009765625" y1="426" width="14.9990234375" height="30" fs4-name="E_S011" object-ref="ET.Switch.MakeSwitchManualFS4" symbol-ref="sym13" layer-ref="1">
+          <parameter ident="picture" value="e_s011.pic" />
+          <state ident="mode" value="0" />
+          <const ident="actuated" value="False" />
+          <dki-data>
+            <designation value="S1" display-ref="O20168" />
+            <description value="Taster (Schließer)" />
+          </dki-data>
+          <classification-data>
+            <type value="contact-manual" />
+          </classification-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Taster (Schließer)" internal-ID="20118" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="B" con-ref="default.2" />
+          <connector ident="S" con-ref="default.3">
+            <link-props>
+              <description value="~ElectricContact" />
+              <inherit-designation value="true" />
+              <suppress-all-inherited value="true" />
+            </link-props>
+          </connector>
+        </component>
+        <component ident="O20119" x1="99.0009765625" y1="426" width="14.9990234375" height="30" fs4-name="E_S011" object-ref="ET.Switch.MakeSwitchManualFS4" symbol-ref="sym14" layer-ref="1">
+          <parameter ident="picture" value="e_s011.pic" />
+          <state ident="mode" value="0" />
+          <const ident="actuated" value="False" />
+          <dki-data>
+            <designation value="S2" display-ref="O20169" />
+            <description value="Taster (Schließer)" />
+          </dki-data>
+          <classification-data>
+            <type value="contact-manual" />
+          </classification-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Taster (Schließer)" internal-ID="20120" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="B" con-ref="default.2" />
+          <connector ident="S" con-ref="default.3">
+            <link-props>
+              <description value="~ElectricContact" />
+              <inherit-designation value="true" />
+              <suppress-all-inherited value="true" />
+            </link-props>
+          </connector>
+        </component>
+        <component ident="O20121" x1="48" y1="378" width="12" height="12" fs4-name="ETriconnection" object-ref="ET.Interface.MultiPin" symbol-ref="sym15" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18862" />
+            <description value="T-Verteiler (elektrisch)" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="T-Verteiler (elektrisch)" internal-ID="20122" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="tmp1" con-ref="default.2" />
+          <connector ident="tmp2" con-ref="default.3" />
+          <connector ident="default.4" con-ref="default.4" />
+        </component>
+        <component ident="O20123" x1="234.001953125" y1="438" width="48.6025390625" height="48" fs4-name="E_B001" object-ref="ET.Switch.ProximitySwitchFS4" symbol-ref="sym16" layer-ref="1">
+          <parameter ident="picture" value="e_b001.pic" />
+          <const ident="actuated" value="True" />
+          <state ident="modeManual" value="0" />
+          <dki-data>
+            <designation value="B1" display-ref="O20170" />
+            <description value="Näherungsschalter, magnetisch" />
+          </dki-data>
+          <classification-data>
+            <type value="proximity-switch" />
+          </classification-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Näherungsschalter, magnetisch" internal-ID="20124" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="B" con-ref="default.2" />
+          <connector ident="C" con-ref="default.3" />
+          <connector ident="S" con-ref="default.4">
+            <link-props>
+              <description value="~ElectricContact" />
+              <inherit-designation value="true" />
+              <suppress-all-inherited value="true" />
+            </link-props>
+          </connector>
+        </component>
+        <component ident="O20125" x1="108" y1="378" width="12" height="12" fs4-name="ETriconnection" object-ref="ET.Interface.MultiPin" symbol-ref="sym17" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18873" />
+            <description value="T-Verteiler (elektrisch)" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="T-Verteiler (elektrisch)" internal-ID="20126" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="tmp1" con-ref="default.2" />
+          <connector ident="tmp2" con-ref="default.3" />
+          <connector ident="default.4" con-ref="default.4" />
+        </component>
+        <component ident="O20127" x1="330.001953125" y1="438" width="48.6025390625" height="48" fs4-name="E_B001" object-ref="ET.Switch.ProximitySwitchFS4" symbol-ref="sym18" layer-ref="1">
+          <parameter ident="picture" value="e_b001.pic" />
+          <const ident="actuated" value="False" />
+          <state ident="modeManual" value="0" />
+          <dki-data>
+            <designation value="B2" display-ref="O20171" />
+            <description value="Näherungsschalter, magnetisch" />
+          </dki-data>
+          <classification-data>
+            <type value="proximity-switch" />
+          </classification-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Näherungsschalter, magnetisch" internal-ID="20128" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="B" con-ref="default.2" />
+          <connector ident="C" con-ref="default.3" />
+          <connector ident="S" con-ref="default.4">
+            <link-props>
+              <description value="~ElectricContact" />
+              <inherit-designation value="true" />
+              <suppress-all-inherited value="true" />
+            </link-props>
+          </connector>
+        </component>
+        <component ident="O20129" x1="426.0009765625" y1="624" width="38.9990234375" height="30" fs4-name="E_Y001" object-ref="ET.Relay.ValveSolenoid" symbol-ref="sym19" layer-ref="1">
+          <parameter ident="picture" value="e_y001.pic" />
+          <const ident="R" value="90" unit="Ohm" />
+          <const ident="vMin" value="20" unit="V" />
+          <const ident="actuated" value="False" />
+          <dki-data>
+            <designation value="Y1" display-ref="O20172" />
+            <description value="Ventilmagnet" />
+          </dki-data>
+          <classification-data>
+            <type value="solenoid-valve-coil" />
+          </classification-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Ventilmagnet" internal-ID="20130" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="B" con-ref="default.2" />
+          <connector ident="E" con-ref="default.3">
+            <link-props>
+              <description value="~ElectricContact" />
+              <inherit-designation value="true" />
+              <suppress-all-inherited value="true" />
+            </link-props>
+          </connector>
+        </component>
+        <component ident="O20131" x1="510.0009765625" y1="624" width="38.9990234375" height="30" fs4-name="E_Y001" object-ref="ET.Relay.ValveSolenoid" symbol-ref="sym20" layer-ref="1">
+          <parameter ident="picture" value="e_y001.pic" />
+          <const ident="R" value="90" unit="Ohm" />
+          <const ident="vMin" value="20" unit="V" />
+          <const ident="actuated" value="False" />
+          <dki-data>
+            <designation value="Y2" display-ref="O20173" />
+            <description value="Ventilmagnet" />
+          </dki-data>
+          <classification-data>
+            <type value="solenoid-valve-coil" />
+          </classification-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Ventilmagnet" internal-ID="20132" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="B" con-ref="default.2" />
+          <connector ident="E" con-ref="default.3">
+            <link-props>
+              <description value="~ElectricContact" />
+              <inherit-designation value="true" />
+              <suppress-all-inherited value="true" />
+            </link-props>
+          </connector>
+        </component>
+        <component ident="O20133" x1="159.0009765625" y1="426" width="14.9990234375" height="30" fs4-name="E_S011" object-ref="ET.Switch.MakeSwitchManualFS4" symbol-ref="sym21" layer-ref="1">
+          <parameter ident="picture" value="e_s011.pic" />
+          <state ident="mode" value="0" />
+          <const ident="actuated" value="False" />
+          <dki-data>
+            <designation value="S3" display-ref="O20174" />
+            <description value="Taster (Schließer)" />
+          </dki-data>
+          <classification-data>
+            <type value="contact-manual" />
+          </classification-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="Taster (Schließer)" internal-ID="20134" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="B" con-ref="default.2" />
+          <connector ident="S" con-ref="default.3">
+            <link-props>
+              <description value="~ElectricContact" />
+              <inherit-designation value="true" />
+              <suppress-all-inherited value="true" />
+            </link-props>
+          </connector>
+        </component>
+        <text-box ident="O20135" x1="49.5" y1="290" width="29" height="23" fs4-name="text" symbol-ref="sym22" is-link="true" link-refs="20097" value="0Z1" multi-link-refs="[20097]" auto-size="false" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18900" />
+          </dki-data>
+        </text-box>
+        <component ident="O20136" x1="45" y1="576" width="144" height="84" fs4-name="DDEOutput" object-ref="ET.IO.DDEOut" symbol-ref="sym23" layer-ref="1">
+          <const ident="OPC_SERVER" value="FestoDidactic.EzOPC.2" />
+          <const ident="OPC_ITEM" value="EasyPort1.OutputPort1" />
+          <const ident="DDE_NAME" value="GET_0" />
+          <const ident="DDE_TOPIC" value="IOPanel" />
+          <const ident="DDE_ADDR" value="100" />
+          <const ident="FPC_MODE" value="False" />
+          <const ident="BEHAVIOR" value="0" />
+          <parameter ident="R" value="1000" />
+          <parameter ident="iMin" value="0.01" />
+          <const ident="EZP_COM_AUTO" value="0" />
+          <const ident="EZP_COM" value="0" />
+          <const ident="EZP_MOD" value="0" />
+          <const ident="EZP_BYTE" value="0" />
+          <const ident="connected_col" value="65535" />
+          <const ident="disconnected_col" value="255" />
+          <const ident="Buffer" value="True" />
+          <const ident="OPCMode" value="False" />
+          <const ident="DDEMode" value="False" />
+          <dki-data>
+            <designation value="?18901" />
+            <description value="FluidSIM-Ausgang" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="FluidSIM-Ausgang" internal-ID="20137" />
+          </user-data>
+          <connector ident="C1" con-ref="default.1" />
+          <connector ident="C2" con-ref="default.2" />
+          <connector ident="C3" con-ref="default.3" />
+          <connector ident="C4" con-ref="default.4" />
+          <connector ident="C5" con-ref="default.5" />
+          <connector ident="C6" con-ref="default.6" />
+          <connector ident="C7" con-ref="default.7" />
+          <connector ident="C8" con-ref="default.8" />
+        </component>
+        <component ident="O20138" x1="168" y1="378" width="12" height="12" fs4-name="ETriconnection" object-ref="ET.Interface.MultiPin" symbol-ref="sym24" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18910" />
+            <description value="T-Verteiler (elektrisch)" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="T-Verteiler (elektrisch)" internal-ID="20139" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="tmp1" con-ref="default.2" />
+          <connector ident="tmp2" con-ref="default.3" />
+          <connector ident="default.4" con-ref="default.4" />
+        </component>
+        <component ident="O20140" x1="429" y1="396" width="144" height="84" fs4-name="DDEInput" object-ref="ET.IO.DDEIn" symbol-ref="sym25" layer-ref="1">
+          <parameter ident="BITMASK" value="0" />
+          <const ident="OPC_SERVER" value="FestoDidactic.EzOPC.2" />
+          <const ident="OPC_ITEM" value="EasyPort1.InputPort1" />
+          <const ident="DDE_NAME" value="SET_0" />
+          <const ident="DDE_TOPIC" value="IOPanel" />
+          <const ident="DDE_ADDR" value="100" />
+          <const ident="FPC_MODE" value="False" />
+          <const ident="BEHAVIOR" value="0" />
+          <const ident="EZP_COM_AUTO" value="0" />
+          <const ident="EZP_COM" value="0" />
+          <const ident="EZP_MOD" value="0" />
+          <const ident="EZP_BYTE" value="0" />
+          <const ident="connected_col" value="65280" />
+          <const ident="disconnected_col" value="255" />
+          <const ident="Buffer" value="True" />
+          <const ident="OPCMode" value="False" />
+          <const ident="DDEMode" value="False" />
+          <dki-data>
+            <designation value="?18915" />
+            <description value="FluidSIM-Eingang" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="FluidSIM-Eingang" internal-ID="20141" />
+          </user-data>
+          <connector ident="C1" con-ref="default.1" />
+          <connector ident="C2" con-ref="default.2" />
+          <connector ident="C3" con-ref="default.3" />
+          <connector ident="C4" con-ref="default.4" />
+          <connector ident="C5" con-ref="default.5" />
+          <connector ident="C6" con-ref="default.6" />
+          <connector ident="C7" con-ref="default.7" />
+          <connector ident="C8" con-ref="default.8" />
+        </component>
+        <component ident="O20142" x1="246" y1="672" width="12" height="12" fs4-name="ETriconnection" object-ref="ET.Interface.MultiPin" symbol-ref="sym26" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18924" />
+            <description value="T-Verteiler (elektrisch)" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="T-Verteiler (elektrisch)" internal-ID="20143" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="tmp1" con-ref="default.2" />
+          <connector ident="tmp2" con-ref="default.3" />
+          <connector ident="default.4" con-ref="default.4" />
+        </component>
+        <component ident="O20144" x1="246" y1="378" width="12" height="12" fs4-name="ETriconnection" object-ref="ET.Interface.MultiPin" symbol-ref="sym27" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18929" />
+            <description value="T-Verteiler (elektrisch)" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="T-Verteiler (elektrisch)" internal-ID="20145" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="tmp1" con-ref="default.2" />
+          <connector ident="tmp2" con-ref="default.3" />
+          <connector ident="default.4" con-ref="default.4" />
+        </component>
+        <component ident="O20146" x1="342" y1="672" width="12" height="12" fs4-name="ETriconnection" object-ref="ET.Interface.MultiPin" symbol-ref="sym28" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18934" />
+            <description value="T-Verteiler (elektrisch)" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="T-Verteiler (elektrisch)" internal-ID="20147" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="tmp1" con-ref="default.2" />
+          <connector ident="tmp2" con-ref="default.3" />
+          <connector ident="default.4" con-ref="default.4" />
+        </component>
+        <component ident="O20148" x1="432" y1="672" width="12" height="12" fs4-name="ETriconnection" object-ref="ET.Interface.MultiPin" symbol-ref="sym29" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?18939" />
+            <description value="T-Verteiler (elektrisch)" />
+          </dki-data>
+          <user-data>
+            <attribute user-ident="~DKIDescription" name="Beschreibung" value="T-Verteiler (elektrisch)" internal-ID="20149" />
+          </user-data>
+          <connector ident="A" con-ref="default.1" />
+          <connector ident="tmp1" con-ref="default.2" />
+          <connector ident="tmp2" con-ref="default.3" />
+          <connector ident="default.4" con-ref="default.4" />
+        </component>
+        <group ident="O20150" x1="30" y1="234.00000071525574" width="144" height="56.000000715255737" layer-ref="1">
+          <dki-data>
+            <designation value="?20150" />
+          </dki-data>
+          <component ident="O20151" x1="30" y1="234.00000071525574" width="144" height="48" fs4-name="WV_5" object-ref="Pneu.DirectionalValve.FivePins" symbol-ref="sym30" layer-ref="1">
+            <parameter ident="error_mode" value="0" />
+            <parameter ident="posNoWanted" value="0" />
+            <const ident="qNN" value="1000" unit="l/min" />
+            <const ident="onDelay" value="0.02" unit="s" />
+            <const ident="offDelay" value="0.03" unit="s" />
+            <const ident="aFL" value="10" />
+            <const ident="aFR" value="10" />
+            <const ident="areaL" value="1" unit="cm2" />
+            <const ident="areaR" value="1" unit="cm2" />
+            <const ident="areaPilotL" value="1.3" unit="cm2" />
+            <const ident="areaPilotR" value="1.3" unit="cm2" />
+            <const ident="areaAirSpringL" value="0.5" unit="cm2" />
+            <const ident="areaAirSpringR" value="0.5" unit="cm2" />
+            <parameter ident="F_spring" value="20" unit="N" />
+            <parameter ident="F_min" value="15" unit="N" />
+            <const ident="F_min_pilot" value="15" unit="N" />
+            <const ident="vMin" value="20" unit="V" />
+            <const ident="F_EL" value="70" unit="N" />
+            <const ident="F_ER" value="70" unit="N" />
+            <const ident="F_ML" value="100" unit="N" />
+            <const ident="F_MR" value="100" unit="N" />
+            <const ident="posNoMax" value="2" />
+            <const ident="posNoInit" value="2" />
+            <const ident="posNoActuated" value="0" />
+            <const ident="pilotL" value="1" />
+            <const ident="pilotR" value="1" />
+            <const ident="dirL" value="0" />
+            <const ident="dirR" value="0" />
+            <const ident="springR" value="False" />
+            <const ident="springL" value="False" />
+            <parameter ident="EL_actuated" value="False" />
+            <parameter ident="ER_actuated" value="False" />
+            <dki-data>
+              <symbol-name value="CONFDV" />
+              <designation value="1V1" display-ref="O20109" />
+              <description value="5/2-Wege-Magnet-Impulsventil" />
+            </dki-data>
+            <classification-data>
+              <type value="directional-valve" />
+            </classification-data>
+            <user-data>
+              <attribute user-ident="~DKIDescription" name="Beschreibung" value="5/2-Wege-Magnet-Impulsventil" internal-ID="20152" />
+            </user-data>
+            <connector ident="Y1" con-ref="AEML.1">
+              <link-props>
+                <type value="solenoid-valve-coil-target" />
+                <description value="~ElectricValveActuation" />
+                <suppress-all-inherited value="true" />
+                <target value="Y1" int-target="20052" comp-ref="O20129" />
+              </link-props>
+            </connector>
+            <connector ident="C1" con-ref="CON5.1" />
+            <connector ident="C2" con-ref="CON5.2" />
+            <connector ident="C3" con-ref="CON5.3" />
+            <connector ident="C4" con-ref="CON5.4" />
+            <connector ident="C5" con-ref="CON5.5" />
+            <connector ident="Y2" con-ref="AEMR.1">
+              <link-props>
+                <type value="solenoid-valve-coil-target" />
+                <position value="right" />
+                <description value="~ElectricValveActuation" />
+                <suppress-all-inherited value="true" />
+                <target value="Y2" int-target="20055" comp-ref="O20131" />
+              </link-props>
+            </connector>
+          </component>
+          <component ident="O20153" x1="103" y1="282.00000143051147" width="10" height="8" object-ref="Pneu.Supply.Silencer" symbol-ref="sym31" layer-ref="1" parts-list="false">
+            <parameter ident="error_mode" value="0" />
+            <const ident="qNN_err" value="10" unit="l/min" />
+            <const ident="qNN" value="2050" unit="l/min" />
+            <dki-data>
+              <designation value="??18944" />
+              <description value="Schalldämpfer" />
+            </dki-data>
+            <user-data>
+              <attribute user-ident="~DKIDescription" name="Beschreibung" value="Schalldämpfer" internal-ID="20234" />
+            </user-data>
+            <connector ident="A" con-ref="default.1" />
+          </component>
+          <component ident="O20154" x1="127" y1="282.00000143051147" width="10" height="8" object-ref="Pneu.Supply.Silencer" symbol-ref="sym32" layer-ref="1" parts-list="false">
+            <parameter ident="error_mode" value="0" />
+            <const ident="qNN_err" value="10" unit="l/min" />
+            <const ident="qNN" value="2050" unit="l/min" />
+            <dki-data>
+              <designation value="??18947" />
+              <description value="Schalldämpfer" />
+            </dki-data>
+            <user-data>
+              <attribute user-ident="~DKIDescription" name="Beschreibung" value="Schalldämpfer" internal-ID="20235" />
+            </user-data>
+            <connector ident="A" con-ref="default.1" />
+          </component>
+        </group>
+        <text-box ident="O20155" x1="92.909584045410156" y1="221.66361618041992" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym33" is-link="true" link-refs="20020" value="4" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19620" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20156" x1="138.90958404541016" y1="221.66361618041992" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym34" is-link="true" link-refs="20021" value="2" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19621" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20157" x1="92.909584045410156" y1="277.6636176109314" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym35" is-link="true" link-refs="20022" value="5" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19622" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20158" x1="121.90958404541016" y1="292.6636176109314" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym36" is-link="true" link-refs="20023" value="1" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19623" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20159" x1="138.90958404541016" y1="277.6636176109314" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym37" is-link="true" link-refs="20024" value="3" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19624" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20160" x1="11.647764205932617" y1="249.66361689567566" width="16.704471588134766" height="16.672767639160156" symbol-ref="sym38" is-link="true" link-refs="20019" value="Y1" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19625" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20161" x1="175.64776420593262" y1="249.66361689567566" width="16.704471588134766" height="16.672767639160156" symbol-ref="sym39" is-link="true" link-refs="20025" value="Y2" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19626" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20162" x1="59.909584045410156" y1="411.66361618041992" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym40" is-link="true" link-refs="20028" value="3" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19627" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20163" x1="59.909584045410156" y1="453.66361618041992" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym41" is-link="true" link-refs="20029" value="4" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19628" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20164" x1="119.90958404541016" y1="411.66361618041992" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym42" is-link="true" link-refs="20031" value="3" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19629" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20165" x1="119.90958404541016" y1="453.66361618041992" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym43" is-link="true" link-refs="20032" value="4" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19630" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20166" x1="179.90958404541016" y1="411.66361618041992" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym44" is-link="true" link-refs="20056" value="3" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19631" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20167" x1="179.90958404541016" y1="453.66361618041992" width="10.180831909179688" height="16.672767639160156" symbol-ref="sym45" is-link="true" link-refs="20057" value="4" multi-link-refs="[]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19632" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20168" x1="14.058305740356445" y1="430.89529132843018" width="19.942670822143555" height="20.209417343139648" symbol-ref="sym46" is-link="true" link-refs="20117" value="S1" multi-link-refs="[20117]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19641" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20169" x1="74.058305740356445" y1="430.89529132843018" width="19.942670822143555" height="20.209417343139648" symbol-ref="sym47" is-link="true" link-refs="20119" value="S2" multi-link-refs="[20119]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19643" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20170" x1="208.46249389648438" y1="451.89529132843018" width="20.539459228515625" height="20.209417343139648" symbol-ref="sym48" is-link="true" link-refs="20123" value="B1" multi-link-refs="[20123]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19645" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20171" x1="304.46249389648438" y1="451.89529132843018" width="20.539459228515625" height="20.209417343139648" symbol-ref="sym49" is-link="true" link-refs="20127" value="B2" multi-link-refs="[20127]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19647" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20172" x1="400.75312995910645" y1="628.89529132843018" width="20.247846603393555" height="20.209417343139648" symbol-ref="sym50" is-link="true" link-refs="20129" value="Y1" multi-link-refs="[20129]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19649" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20173" x1="484.75312995910645" y1="628.89529132843018" width="20.247846603393555" height="20.209417343139648" symbol-ref="sym51" is-link="true" link-refs="20131" value="Y2" multi-link-refs="[20131]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19651" />
+          </dki-data>
+        </text-box>
+        <text-box ident="O20174" x1="134.05830574035645" y1="430.89529132843018" width="19.942670822143555" height="20.209417343139648" symbol-ref="sym52" is-link="true" link-refs="20133" value="S3" multi-link-refs="[20133]" layer-ref="1" parts-list="false">
+          <dki-data>
+            <designation value="?19653" />
+          </dki-data>
+        </text-box>
+        <line ident="O20176" object-ref="Pneu.Supply.LongLine">
+          <dki-data>
+            <designation value="?18812" />
+          </dki-data>
+        </line>
+        <connect con1="O20097.C1" con2="O20107.A" ident="O20097.C1_O20107.A" line-ref="O20176" points="0,0 -12,0 -12,18" tube-list="false" />
+        <line ident="O20178" object-ref="Pneu.Supply.LongLine">
+          <dki-data>
+            <designation value="?18814" />
+          </dki-data>
+        </line>
+        <connect con1="O20097.C2" con2="O20151.C4" ident="O20097.C2_O20151.C4" line-ref="O20178" points="0,0 30,0 30,-41.9999985694885" tube-list="false" />
+        <line ident="O20180" object-ref="Pneu.Supply.LongLine">
+          <dki-data>
+            <designation value="?18817" />
+          </dki-data>
+        </line>
+        <connect con1="O20099.A" con2="O20101.B" ident="O20099.A_O20101.B" line-ref="O20180" points="0,0 0,18" tube-list="false" />
+        <line ident="O20182" object-ref="Pneu.Supply.LongLine">
+          <dki-data>
+            <designation value="?18819" />
+          </dki-data>
+        </line>
+        <connect con1="O20099.B" con2="O20103.B" ident="O20099.B_O20103.B" line-ref="O20182" points="0,0 0,18" tube-list="false" />
+        <line ident="O20184" object-ref="Pneu.Supply.LongLine">
+          <dki-data>
+            <designation value="?18823" />
+          </dki-data>
+        </line>
+        <connect con1="O20101.A" con2="O20151.C1" ident="O20101.A_O20151.C1" line-ref="O20184" points="0,0 0,36 18,36 18,66" tube-list="false" />
+        <line ident="O20186" object-ref="Pneu.Supply.LongLine">
+          <dki-data>
+            <designation value="?18827" />
+          </dki-data>
+        </line>
+        <connect con1="O20103.A" con2="O20151.C2" ident="O20103.A_O20151.C2" line-ref="O20186" points="0,0 0,36 -6,36 -6,66" tube-list="false" />
+        <line ident="O20188" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18849" />
+          </dki-data>
+        </line>
+        <connect con1="O20113.A" con2="O20121.A" ident="O20113.A_O20121.A" line-ref="O20188" points="0,0 18,0" tube-list="false" />
+        <line ident="O20190" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18852" />
+          </dki-data>
+        </line>
+        <connect con1="O20115.A" con2="O20142.A" ident="O20115.A_O20142.A" line-ref="O20190" points="0,0 222,0" tube-list="false" />
+        <line ident="O20192" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18856" />
+          </dki-data>
+        </line>
+        <connect con1="O20117.B" con2="O20136.C1" ident="O20117.B_O20136.C1" line-ref="O20192" points="0,0 0,120" tube-list="false" />
+        <line ident="O20194" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18859" />
+          </dki-data>
+        </line>
+        <connect con1="O20119.A" con2="O20125.A" ident="O20119.A_O20125.A" line-ref="O20194" points="0,0 0,0 0,-42" tube-list="false" />
+        <line ident="O20196" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18861" />
+          </dki-data>
+        </line>
+        <connect con1="O20119.B" con2="O20136.C2" ident="O20119.B_O20136.C2" line-ref="O20196" points="0,0 0,30 -42,30 -42,120" tube-list="false" />
+        <line ident="O20198" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18865" />
+          </dki-data>
+        </line>
+        <connect con1="O20121.tmp1" con2="O20117.A" ident="O20121.tmp1_O20117.A" line-ref="O20198" points="0,0 0,42" tube-list="false" />
+        <line ident="O20200" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18869" />
+          </dki-data>
+        </line>
+        <connect con1="O20123.A" con2="O20144.A" ident="O20123.A_O20144.A" line-ref="O20200" points="0,0 0,0 0,-54" tube-list="false" />
+        <line ident="O20202" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18872" />
+          </dki-data>
+        </line>
+        <connect con1="O20123.C" con2="O20136.C4" ident="O20123.C_O20136.C4" line-ref="O20202" points="0,0 12,0 12,60 -174,60 -174,114" tube-list="false" />
+        <line ident="O20204" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18876" />
+          </dki-data>
+        </line>
+        <connect con1="O20125.tmp1" con2="O20121.tmp2" ident="O20125.tmp1_O20121.tmp2" line-ref="O20204" points="0,0 0,0 -60,0" tube-list="false" />
+        <line ident="O20206" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18878" />
+          </dki-data>
+        </line>
+        <connect con1="O20125.tmp2" con2="O20138.A" ident="O20125.tmp2_O20138.A" line-ref="O20206" points="0,0 60,0" tube-list="false" />
+        <line ident="O20208" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18881" />
+          </dki-data>
+        </line>
+        <connect con1="O20127.A" con2="O20144.tmp1" ident="O20127.A_O20144.tmp1" line-ref="O20208" points="0,0 0,0 0,-54 -96,-54" tube-list="false" />
+        <line ident="O20210" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18883" />
+          </dki-data>
+        </line>
+        <connect con1="O20127.B" con2="O20146.A" ident="O20127.B_O20146.A" line-ref="O20210" points="0,0 0,192" tube-list="false" />
+        <line ident="O20212" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18885" />
+          </dki-data>
+        </line>
+        <connect con1="O20127.C" con2="O20136.C5" ident="O20127.C_O20136.C5" line-ref="O20212" points="0,0 12,0 12,78 -252,78 -252,114" tube-list="false" />
+        <line ident="O20214" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18888" />
+          </dki-data>
+        </line>
+        <connect con1="O20129.A" con2="O20140.C1" ident="O20129.A_O20140.C1" line-ref="O20214" points="0,0 0,-144" tube-list="false" />
+        <line ident="O20216" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18890" />
+          </dki-data>
+        </line>
+        <connect con1="O20129.B" con2="O20148.A" ident="O20129.B_O20148.A" line-ref="O20216" points="0,0 0,0 0,24" tube-list="false" />
+        <line ident="O20218" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18893" />
+          </dki-data>
+        </line>
+        <connect con1="O20131.A" con2="O20140.C2" ident="O20131.A_O20140.C2" line-ref="O20218" points="0,0 0,-78 -66,-78 -66,-144" tube-list="false" />
+        <line ident="O20220" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18895" />
+          </dki-data>
+        </line>
+        <connect con1="O20131.B" con2="O20148.tmp1" ident="O20131.B_O20148.tmp1" line-ref="O20220" points="0,0 0,0 0,24 -84,24" tube-list="false" />
+        <line ident="O20222" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18899" />
+          </dki-data>
+        </line>
+        <connect con1="O20133.B" con2="O20136.C3" ident="O20133.B_O20136.C3" line-ref="O20222" points="0,0 0,48 -84,48 -84,120" tube-list="false" />
+        <line ident="O20224" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18913" />
+          </dki-data>
+        </line>
+        <connect con1="O20138.tmp1" con2="O20133.A" ident="O20138.tmp1_O20133.A" line-ref="O20224" points="0,0 0,42" tube-list="false" />
+        <line ident="O20226" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18927" />
+          </dki-data>
+        </line>
+        <connect con1="O20142.tmp1" con2="O20123.B" ident="O20142.tmp1_O20123.B" line-ref="O20226" points="0,0 0,0 0,-192" tube-list="false" />
+        <line ident="O20228" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18932" />
+          </dki-data>
+        </line>
+        <connect con1="O20144.tmp2" con2="O20138.tmp2" ident="O20144.tmp2_O20138.tmp2" line-ref="O20228" points="0,0 0,0 -78,0" tube-list="false" />
+        <line ident="O20230" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18937" />
+          </dki-data>
+        </line>
+        <connect con1="O20146.tmp1" con2="O20142.tmp2" ident="O20146.tmp1_O20142.tmp2" line-ref="O20230" points="0,0 -96,0" tube-list="false" />
+        <line ident="O20232" object-ref="ET.Basic.Wire">
+          <dki-data>
+            <designation value="?18942" />
+          </dki-data>
+        </line>
+        <connect con1="O20148.tmp2" con2="O20146.tmp2" ident="O20148.tmp2_O20146.tmp2" line-ref="O20232" points="0,0 0,0 -90,0" tube-list="false" />
+      </section>
+    </file>
+  </section>
+</fluidtools2>
