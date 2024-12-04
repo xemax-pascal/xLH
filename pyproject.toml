@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "xLH"
+package-mode = false
+version = "0.1.0"
+description = ""
+authors = ["Pascal Helfenstein <pascal.helfenstein@xemax.ch>", "Thomas Ruoss <thomas.ruoss@xemax.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+wheel = "^0.45.0"
+opcua = "^0.98.13"
+cryptography = "^44.0.0"
+pywin32 = "^308"
+tomli = "^2.2.1"
+rich = "^13.9.4"
+textual = "^0.88.1"
+pyinstaller= "^6.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
