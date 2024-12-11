@@ -4,8 +4,8 @@ webvisu_port = 8080
 
 [opcua]
 port = 4840
-#plc_name = "CODESYS Control for Raspberry Pi 64 SL"  # Codesys 64-Bit
-plc_name = "CODESYS Control for Raspberry Pi SL"  # Codesys 32-Bit
+plc_name = "CODESYS Control for Raspberry Pi 64 SL"  # Codesys 64-Bit
+#plc_name = "CODESYS Control for Raspberry Pi SL"  # Codesys 32-Bit
 
 [fluidsim_dde]
 server="FLSIMP"

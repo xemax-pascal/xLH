@@ -1,3 +1,0 @@
-https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile
-https://pyinstaller.org/en/spec-files.html
-https://pyinstaller.org/en/runtime-information.html

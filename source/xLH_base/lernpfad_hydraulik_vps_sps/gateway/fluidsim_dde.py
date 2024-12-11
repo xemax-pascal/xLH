@@ -44,18 +44,13 @@ class FluidsimDdeClient:
         # Request data
         try:
             self.value_rx = int(self._conversation.Request(self.item_rx))
-            # value_an_rx_1 = self._conversation.Request('AN_GET_0')
-            # value_an_rx_2 = self._conversation.Request('AN_GET_1')
-            # print(f"Received data: {value_an_rx_1} - {value_an_rx_2}")
         except Exception as e:
             print(f"Error in DDE request communication: {e}")
             self.disconnect()
             self.connect()
-            # self.value_rx = 0
 
         # Transmit data
         try:
-            # conversation.Poke(item_tx, r'255')
             self._conversation.Poke(self.item_tx, f'{str(self.value_tx)}'.encode('utf-8'))
             # print(f"Data '{data}' successfully sent to {server} {topic} {item}")
         except Exception as e:
